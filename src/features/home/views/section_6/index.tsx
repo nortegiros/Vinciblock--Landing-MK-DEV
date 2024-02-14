@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
-import sectionThreeImage from "../../../../../public/assents/images/orbitas_vinci_block.gif";
+import informaticSecurity from "../../../../../public/assents/images/seguridad_informatica.gif";
+import testModules from "../../../../../public/assents/images/red_dorada.webp";
+import securityAudits from "../../../../../public/assents/images/auditoria_seguridad.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 
@@ -12,7 +14,7 @@ const json = [
     description2:
       "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: informaticSecurity,
   },
   {
     title: "Módulos de prueba",
@@ -21,7 +23,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: testModules,
   },
   {
     title: "Auditorias de Seguridad",
@@ -30,7 +32,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: securityAudits,
   },
 ];
 

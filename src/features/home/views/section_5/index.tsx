@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import sectionThreeImage from "../../../../../public/assents/images/orbitas_vinci_block.gif";
+import products from "../../../../../public/assents/images/productos_vinciblock.gif";
+import mobileApps from "../../../../../public/assents/images/mobileApp.webp";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 
@@ -12,7 +13,7 @@ const json = [
     description2:
       "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
     btn: "Iniciar Ahora",
-    image: "",
+    image:""
   },
   {
     title: "Productos",
@@ -21,7 +22,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: products,
   },
   {
     title: "Desarrollo de Aplicación Movil",
@@ -30,7 +31,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: mobileApps,
   },
 ];
 
@@ -81,9 +82,9 @@ export const SectionFive: React.FC = () => {
           <DarkButton text={json[selectedIndex].btn} />
         </div>
         <div
-          className={selectedIndex == 0 ? styles.section2 : styles.section2b}
+          className={json[selectedIndex].image == "" ? styles.none : selectedIndex == 0 ? styles.section2 : styles.section2b}
         >
-          <Image src={json[selectedIndex].image} alt="sectionImage" />
+            <Image src={json[selectedIndex].image} alt="sectionImage" />
         </div>
       </div>
     </div>

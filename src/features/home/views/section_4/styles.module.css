@@ -144,7 +144,7 @@
 }
 .section2b img{
     width: 100%;
-    max-width: 40rem;
+    max-width: 30rem;
     height: auto;
 }
 @media(max-width: 1500px){

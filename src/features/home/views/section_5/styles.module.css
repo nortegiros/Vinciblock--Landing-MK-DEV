@@ -100,7 +100,6 @@
 .section1b h2{
     margin: 0;
     color: var(--primary-color);
-    text-align: center;
     font-family: Sora;
     font-size: 2.9375rem;
     font-weight: 600;
@@ -134,6 +133,9 @@
     width: 100%;
     max-width: 40rem;
     height: auto;
+}
+.none{
+    display: none;
 }
 .section2b{
     width: 48%;
@@ -171,6 +173,9 @@
     .section1b{
         width: 100%;
         max-width: none;
+    }
+    .section1b h2{
+        text-align: center;
     }
     .section2b{
         width: 100%;

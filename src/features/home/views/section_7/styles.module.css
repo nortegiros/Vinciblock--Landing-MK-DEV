@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem 1.21rem 3.81rem;
+    background: linear-gradient(90deg, rgba(124,63,7,1) 49%, rgba(241,222,104,1) 99%);
+}
+.container h2{
+    color: var(--primary-color);
+    text-align: center;
+font-family: Poppins;
+font-size: 2.125rem;
+font-weight: 400;
+line-height: 3rem;
+}
+@media(max-width: 1079px){
+    .container{
+        background: linear-gradient(88deg, rgba(124,63,7,1) -11.64%, #F4C656 100%);
+    }
+}

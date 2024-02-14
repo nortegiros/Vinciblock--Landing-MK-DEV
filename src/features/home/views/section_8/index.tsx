@@ -2,6 +2,8 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import styles from './styles.module.css';
+import getInTouch from '../../../../../public/assents/images/get_in_touch.gif';
+import Image from 'next/image';
 
 export const SectionEight: React.FC = () => {
   const initialValues = {
@@ -26,6 +28,7 @@ export const SectionEight: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      <Image src={getInTouch} alt='getInTouch' className={styles.getInTouch}/>
       <div className={styles.title}>
         <h2>Get in touch</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, </p>
@@ -56,7 +59,7 @@ export const SectionEight: React.FC = () => {
             <Field as="textarea" name="message" placeholder="Mensaje" className={styles.message}/>
             <ErrorMessage name="message" component="div" className={styles.error} />
           </div>
-          <div className={styles.btnContainer}><button type="submit">Enviar</button></div>
+          <div className={styles.btnContainer}><button type="submit">SEND</button></div>
         </Form>
       </Formik>
     </div>

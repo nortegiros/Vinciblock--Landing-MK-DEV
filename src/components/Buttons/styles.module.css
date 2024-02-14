@@ -75,3 +75,46 @@
         width: 100%;
     }
 }
+
+/* LightButton */
+.lightBtn{
+    display: flex;
+    width: 14.5rem;
+    height: 3.1875rem;
+    padding: 0.625rem 2.375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+.lightBtn span{
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+}
+.arrowLightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.lineLight{
+    width: 1.375rem;
+    height: 0;
+    border: 1px solid #ffffff;
+    margin-right: -0.95rem;
+}
+.arrowLight{
+    margin: 0;
+    color: #ffffff;
+    height: 1.75rem;
+    width: auto;
+}
+.lightBtn:hover{
+    background-color: #00000038;
+}

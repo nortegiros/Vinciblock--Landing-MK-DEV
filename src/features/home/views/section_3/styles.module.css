@@ -134,6 +134,7 @@
     width: 100%;
     max-width: 40rem;
     height: auto;
+    
 }
 .section2b{
     width: 48%;
@@ -144,7 +145,7 @@
 }
 .section2b img{
     width: 100%;
-    max-width: 40rem;
+    max-width: 30rem;
     height: auto;
 }
 @media(max-width: 1500px){

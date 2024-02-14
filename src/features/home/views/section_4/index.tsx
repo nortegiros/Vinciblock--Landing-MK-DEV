@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
-import sectionThreeImage from "../../../../../public/assents/images/orbitas_vinci_block.gif";
+import artificialInteligence from "../../../../../public/assents/images/inteligencia_artificial.gif";
+import augmentedReality from "../../../../../public/assents/images/realidad_aumentada.gif";
+import facialRecognition from "../../../../../public/assents/images/reconocimiento_facial.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 
@@ -12,7 +14,7 @@ const json = [
     description2:
       "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: artificialInteligence,
   },
   {
     title: "Realidad Aumentada",
@@ -21,7 +23,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: augmentedReality,
   },
   {
     title: "Reconocimiento Facial",
@@ -30,7 +32,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: facialRecognition,
   },
 ];
 

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
-import sectionThreeImage from "../../../../../public/assents/images/orbitas_vinci_block.gif";
+import blockchain from "../../../../../public/assents/images/orbitas_vinci_block.gif";
+import tokenizacion from "../../../../../public/assents/images/tokenizacion.gif";
+import exchange from "../../../../../public/assents/images/exchange.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 
@@ -12,7 +14,7 @@ const json = [
     description2:
       "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: blockchain,
   },
   {
     title: "Tokenización",
@@ -21,7 +23,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: tokenizacion,
   },
   {
     title: "Exchange",
@@ -30,7 +32,7 @@ const json = [
     description2:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
     btn: "Iniciar Ahora",
-    image: sectionThreeImage,
+    image: exchange,
   },
 ];
 

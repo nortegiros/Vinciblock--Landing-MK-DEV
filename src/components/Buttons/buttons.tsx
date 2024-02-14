@@ -43,3 +43,15 @@ export const DarkButton: React.FC<DarkButtonProps> = ({ text }) => {
     );
   };
 
+  export const LightButton: React.FC<DarkButtonProps> = ({ text }) => {
+    return (
+      <div className={styles.lightBtn}>
+        <span>{text}</span>
+        <div className={styles.arrowLightContainer}>
+          <div className={styles.lineLight}></div>
+          <MdKeyboardArrowRight className={styles.arrowLight} />
+        </div>
+      </div>
+    );
+  };
+
