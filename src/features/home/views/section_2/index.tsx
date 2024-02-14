@@ -20,7 +20,7 @@ export const SectionTwo: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h3>Servcios</h3>
+        <h3>Servicios</h3>
       </div>
       <div className={styles.cardsContainer}>
         {cards.map((card, i) => (
