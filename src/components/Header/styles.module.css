@@ -7,7 +7,9 @@
     align-items: center;
     padding: 1.81rem 10rem
 }
-
+.world{
+    color: var(--primary-color);
+}
 .headerTitle{
     cursor: pointer;
 }
@@ -131,6 +133,7 @@
     .icon{
         width: 100%;
         height: auto;
+        color: var(--primary-color);
     }
     .menu{
         position: absolute;

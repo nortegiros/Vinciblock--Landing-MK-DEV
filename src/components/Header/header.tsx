@@ -54,7 +54,7 @@ const Header = () => {
       {/* small screens */}
       <div className={styles.headerContent2}>
         <div className={styles.select}>
-          <BiWorld />
+          <BiWorld className={styles.world}/>
           <select onChange={handleLanguageChange} className={styles.select1}>
             <option value="en">{t('header.english')}</option>
             <option value="es">{t('header.spanish')}</option>
