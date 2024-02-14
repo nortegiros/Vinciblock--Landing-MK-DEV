@@ -1,0 +1,137 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13rem 10rem 5rem;
+    gap: 1rem;
+}
+.title h1{
+  margin: 0;
+  text-align: center;
+  font-family: Sora;
+  font-size: 3.75rem;
+  font-weight: 600;
+  line-height: 4.20706rem;
+  letter-spacing: 0.05625rem;
+  color: #FFF;
+  max-width: 62rem;
+}
+.title span{
+  margin: 0;
+  background: linear-gradient(88deg, #9C7017 32.14%, #F4C655 54.7%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container p{
+  margin: 0;
+  color: #B4B4B4;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 158.023%;
+  max-width:  49.375rem;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.69rem;
+  margin-top: 3.12rem;
+}
+.search input{
+  width: 23.0625rem;
+  height: 4.125rem;
+  border-radius: 1.25rem 0.1875rem 0.1875rem 1.25rem;
+  border: 1px solid #505050;
+  background: #101010;
+  color: #B4B4B4;
+  font-family: Manrope;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 158.023%;
+  padding-left: 1.94rem;
+}
+.search button{
+  width: 10.8125rem;
+  height: 4.125rem;
+  border-radius: 0.1875rem 1.25rem 1.25rem 0.1875rem;
+  border: 1px solid #EAB846;
+  background: linear-gradient(88deg, #936203 -11.64%, #F4C656 100%);
+  color: #000;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 158.023%;
+  cursor: pointer;
+}
+.search button:hover{
+  background: linear-gradient(88deg, #F4C656 -11.64%, #936203 100%);
+}
+@media(max-width: 1500px){
+  .container{
+      padding: 13rem 6.5rem 5rem;
+  }
+}
+@media(max-width: 1350px){
+  .container{
+      padding: 13rem 4rem 5rem;
+  }
+}
+@media(max-width: 1079px){
+  .container{
+    padding: 7rem 4rem 3.5rem;
+}
+  .title h1{
+    font-size: 3rem;
+    line-height: 3.45625rem;
+    letter-spacing: 0.045rem;
+    max-width: 35rem;
+  }
+  .container p{
+    font-size: 1rem;
+    line-height: 158.023%;
+    max-width: 33.3125rem;
+  }
+  .search input{
+    width: 23.0625rem;
+    height: 4.125rem;
+  }
+  .search button{
+    width: 10.8125rem;
+    height: 4.125rem;
+  }
+}
+@media(max-width: 767px){
+  .container{
+    padding: 4.5rem 1.21rem 3.5rem;
+  }
+  .title h1{
+    font-size: 1.875rem;
+    line-height: 1.89375rem;
+    letter-spacing: 0.02813rem;
+    max-width: 20rem;
+  }
+  .container p{
+    max-width: 20rem;
+  }
+  .search{
+    gap: 0.22rem;
+    margin-top: 2.12rem;
+  }
+  .search input{
+    font-size: 1rem;
+    width: 75%;
+    height: 2.6875rem;
+  }
+  .search button{
+    font-size: 1rem;
+    width: 30%;
+    height: 2.6875rem;
+  }
+}

@@ -1,0 +1,165 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 10rem 20rem;
+  gap: 2rem;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.title h2 {
+  margin: 0;
+  color: var(--primary-color);
+  text-align: center;
+  font-family: SpaceGrotesk;
+  font-size: 2.9375rem;
+  font-weight: 400;
+  line-height: 4.20706rem;
+  letter-spacing: 0.04406rem;
+}
+.title p {
+  margin: 0;
+  opacity: 0.7;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  text-transform: lowercase;
+  max-width: 44rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+.shortInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 26.39119rem;
+  height: 2.98513rem;
+  padding: 0.625rem;
+  border: 1px solid #404040;
+  background: #000;
+  color: #545454;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.message {
+  width: 53.75rem;
+  height: 9.07244rem;
+  padding: 0.625rem;
+  border: 1px solid #404040;
+  background: #000;
+  color: #545454;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.input:focus,
+.input:not(:placeholder-shown),
+.message:focus,
+.message:not(:placeholder-shown) {
+  outline: none;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.error {
+  position: absolute;
+  color: rgb(97, 45, 45);
+  font-family: Poppins;
+  font-size: 0.75rem;
+  bottom: -1rem;
+}
+.btnContainer {
+  width: 100%;
+}
+.form button {
+  display: flex;
+  width: 8.1875rem;
+  height: 2.98513rem;
+  padding: 0.625rem 2.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border: 1px solid #fff;
+  background: linear-gradient(
+    257deg,
+    #fff -22.01%,
+    rgba(177, 177, 177, 0) 207.28%
+  );
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.form button:hover {
+  background: linear-gradient(
+    257deg,
+    rgba(177, 177, 177, 0.712) -22.01%,
+    #fff 207.28%
+  );
+}
+@media(max-width: 1079px) {
+  .container {
+    padding: 5rem 4rem 16rem;
+  }
+  .title p{
+    max-width: 33.8rem;
+  }
+  .input {
+    width: 19.62344rem;
+    height: 3.12919rem;
+  }
+  
+  .message {
+    width: 39.96644rem;
+    height: 9.51019rem;
+  }
+}
+@media(max-width: 767px) {
+    .container {
+      padding: 5rem 1.21rem 10rem;
+    }
+    .shortInput{
+      gap: 0.5rem;
+    }
+    .title p{
+        max-width: 21.6rem;
+    }
+    .input {
+        width: 10rem;
+    }
+    .message {
+        width: 20.5rem;
+        height: 14.26944rem;
+    }
+  }

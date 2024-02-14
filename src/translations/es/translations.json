@@ -1,0 +1,34 @@
+{
+    "header": {
+        "solutions": "Soluciones",
+        "developers": "Desarrolladores",
+        "team": "Equipo",
+        "company": "Empresa",
+        "english": "Inglés",
+        "spanish": "Español",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "address": "Dirección: Lorep the ipsum lorem ipsum the lorep",
+        "home": "Inicio",
+        "about": "Acerca de nosotros",
+        "bookings": "Reservas",
+        "blog": "Blog",
+        "legal": "Legal",
+        "terms": "Términos de uso",
+        "privacy": "Política de privacidad",
+        "cookies": "Política de cookies",
+        "products": "Productos",
+        "taketour": "Recorrido",
+        "livechat": "Chat en vivo",
+        "reviews": "Reseñas",
+        "newsletter": "Boletín",
+        "newsletterdesc": "Mantente actualizado",
+        "yourEmail": "Tu email",
+        "subscribe": "Suscribirse",
+        "copyrigth": "Copyright 2023. Vinciblock todos los derechos reservados"
+    },
+    "home": {
+        "home": "Inicio"
+    }
+}
