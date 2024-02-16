@@ -5,38 +5,36 @@ import testModules from "../../../../../public/assents/images/red_dorada.webp";
 import securityAudits from "../../../../../public/assents/images/auditoria_seguridad.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
-
-const json = [
-  {
-    title: "Seguridad informática",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    btn: "Iniciar Ahora",
-    image: informaticSecurity,
-  },
-  {
-    title: "Módulos de prueba",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: testModules,
-  },
-  {
-    title: "Auditorias de Seguridad",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: securityAudits,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export const SectionSix: React.FC = () => {
+
+  const {t}=useTranslation();
+
+  const json = [
+    {
+      title: t('home.informaticSecurity.title'),
+      description1:t('home.informaticSecurity.description01'),
+      description2:t('home.informaticSecurity.description02'),
+      btn:t('home.informaticSecurity.button'),
+      image: informaticSecurity,
+    },
+    {
+      title: t('home.testModules.title'),
+      description1:t('home.testModules.description01'),
+      description2:t('home.testModules.description02'),
+      btn:t('home.testModules.button'),
+      image: testModules,
+    },
+    {
+      title: t('home.securityAudits.title'),
+      description1:t('home.securityAudits.description01'),
+      description2:t('home.securityAudits.description02'),
+      btn:t('home.securityAudits.button'),
+      image: securityAudits,
+    },
+  ];
+
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleClick = (index: number) => {

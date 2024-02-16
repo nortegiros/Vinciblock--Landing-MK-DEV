@@ -1,4 +1,5 @@
 .container{
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #010101;
@@ -7,11 +8,21 @@
     align-items: center;
     padding: 1.81rem 10rem
 }
+.background{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .world{
     color: var(--primary-color);
+    z-index: 2;
 }
 .headerTitle{
     cursor: pointer;
+    z-index: 2;
 }
 .headerTitle a{
     margin: 0;
@@ -29,6 +40,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 5.19rem;
+    z-index: 2;
 }
 .list{
     display: flex;
@@ -49,14 +61,34 @@
     justify-content: center;
     align-items: center;
 }
-.select1{
-    background-color: #010101;
+.select1 {
+    background-color: transparent;
     border: none;
     color: var(--primary-color);
     font-family: SpaceGrotesk;
     font-size: 1.0625rem;
     font-weight: 500;
     outline: none;
+    position: relative; /* Asegura que los estilos aplicados a ::after sean relativos a este elemento */
+}
+
+.select1::after {
+    content: '\25BE'; /* Carácter Unicode para la flecha hacia abajo */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Ajusta el espaciado de la flecha hacia abajo */
+    transform: translateY(-50%);
+    color: var(--primary-color); /* Color de la flecha hacia abajo */
+}
+
+.select1:focus::after {
+    color: #010101; /* Color de la flecha hacia abajo cuando el select está enfocado */
+}
+
+/* Estilos del menú desplegable */
+.select1 option {
+    background-color: #010101; /* Color de fondo del menú desplegable */
+    color: var(--primary-color); /* Color del texto en el menú desplegable */
 }
 .phoneSelect{
     display: none;
@@ -76,7 +108,7 @@
     border-radius: 0.5rem;
     border: 1px solid #F4C656;
     transition: all 0.3s ease;
-    background-color: #010101;
+    background-color: #01010100;
 }
 .headerButtons button:hover{
     background: #f4c75615;
@@ -119,16 +151,18 @@
         justify-content: flex-end;
         align-items: center;
         gap: 2.75rem;
+        z-index: 2;
     }
     .none{
         display: none;
     }
     .sandwitch{
-        background-color: #010101;
+        background-color: #01010100;
         border: none;
         margin: 0;
         padding: 0;
         width: 1.32rem;
+        z-index: 2;
     }
     .icon{
         width: 100%;
@@ -142,7 +176,7 @@
         align-items: flex-end;
         gap: 0.75rem;
         padding: 1rem 0.5rem;
-        background-color: #010101;
+        background-color: #01010100;
         color: var(--primary-color);
         top: 1.5rem;
         width: 150px;
@@ -165,7 +199,7 @@
     }
     .phoneSelect{
         display: flex;
-        background-color: #010101;
+        background-color: #01010100;
         border: none;
         color: var(--primary-color);
         font-family: SpaceGrotesk;
@@ -173,7 +207,23 @@
         font-weight: 500;
         outline: none;
     }
-    .phoneSelect option{
+    .phoneSelect::after {
+        content: '\25BE'; /* Carácter Unicode para la flecha hacia abajo */
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Ajusta el espaciado de la flecha hacia abajo */
+        transform: translateY(-50%);
+        color: var(--primary-color); /* Color de la flecha hacia abajo */
+    }
+    
+    .phoneSelect:focus::after {
+        color: #010101; /* Color de la flecha hacia abajo cuando el select está enfocado */
+    }
+    
+    /* Estilos del menú desplegable */
+    .phoneSelect option {
+        background-color: #010101; /* Color de fondo del menú desplegable */
+        color: var(--primary-color);
         font-size: 0.8rem;
     }
     .select1{

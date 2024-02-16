@@ -4,38 +4,35 @@ import products from "../../../../../public/assents/images/productos_vinciblock.
 import mobileApps from "../../../../../public/assents/images/mobileApp.webp";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
-
-const json = [
-  {
-    title: "Desarrollo de productos",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    btn: "Iniciar Ahora",
-    image:""
-  },
-  {
-    title: "Productos",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: products,
-  },
-  {
-    title: "Desarrollo de Aplicación Movil",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: mobileApps,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export const SectionFive: React.FC = () => {
+  const {t}=useTranslation();
+
+  const json = [
+    {
+      title: t('home.productDevelopment.title'),
+      description1:t('home.productDevelopment.description01'),
+      description2:t('home.productDevelopment.description02'),
+      btn:t('home.productDevelopment.button'),
+      image: "",
+    },
+    {
+      title: t('home.products.title'),
+      description1:t('home.products.description01'),
+      description2:t('home.products.description02'),
+      btn:t('home.products.button'),
+      image: products,
+    },
+    {
+      title: t('home.mobileApps.title'),
+      description1:t('home.mobileApps.description01'),
+      description2:t('home.mobileApps.description02'),
+      btn:t('home.mobileApps.button'),
+      image: mobileApps,
+    },
+  ];
+  
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleClick = (index: number) => {

@@ -1,26 +1,28 @@
 import { MdKeyboardArrowRight } from "react-icons/md"; 
 import styles from "./styles.module.css";
+import { useTranslation } from "react-i18next";
 
 export const SectionTwo: React.FC = () => {
+  const {t}= useTranslation();
   const cards: string[] = [
-    'Smart Contract',
-    'Inteligencia Artificial',
-    'Reconocimiento Facial',
-    'Tokenización',
-    'Desarrollo de productos',
-    'Seguridad informática',
-    'Desarrollo de exchange',
-    'Aplicaciones móviles',
-    'Auditorías de seguridad',
-    'Desarrollo de blockchain',
-    'Pasarelas de pagos',
+    t('home.services.smartContract'),
+    t('home.services.ai'),
+    t('home.services.facialRecognition'),
+    t('home.services.tokenization'),
+    t('home.services.productDevelopment'),
+    t('home.services.informaticSecurity'),
+    t('home.services.exchangeDevelopment'),
+    t('home.services.mobileApp'),
+    t('home.services.securityAudits'),
+    t('home.services.blockchainDevelopment'),
+    t('home.services.paymentGateways'),
     ""
   ];
   const top =[0,1,2,6,7,8]
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h3>Servicios</h3>
+        <h3>{t('home.services.title')}</h3>
       </div>
       <div className={styles.cardsContainer}>
         {cards.map((card, i) => (

@@ -1,9 +1,12 @@
+'use client'
 import { FiMenu } from "react-icons/fi"; 
 import { useTranslation } from "react-i18next";
 import { BiWorld } from "react-icons/bi";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import background from "../../../public/assents/images/backgroundFirstPage1.webp";
 
 const Header = () => {
 
@@ -27,6 +30,7 @@ const Header = () => {
 
   return (
     <div className={styles.container}>
+      <Image src={background} alt="background" className={styles.background}/>
       <div className={styles.headerTitle} >
         <a href="/">VINCIBLOCK</a>
       </div>

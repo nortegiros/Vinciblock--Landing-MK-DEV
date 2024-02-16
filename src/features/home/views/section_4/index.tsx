@@ -1,42 +1,42 @@
 import { useState } from "react";
 import Image from "next/image";
-import artificialInteligence from "../../../../../public/assents/images/inteligencia_artificial.gif";
+import artificialIntelligence from "../../../../../public/assents/images/inteligencia_artificial.gif";
 import augmentedReality from "../../../../../public/assents/images/realidad_aumentada.gif";
 import facialRecognition from "../../../../../public/assents/images/reconocimiento_facial.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
+import { useTranslation } from "react-i18next";
 
-const json = [
-  {
-    title: "Artificial Intelligence",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    btn: "Iniciar Ahora",
-    image: artificialInteligence,
-  },
-  {
-    title: "Realidad Aumentada",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: augmentedReality,
-  },
-  {
-    title: "Reconocimiento Facial",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: facialRecognition,
-  },
-];
+
 
 export const SectionFour: React.FC = () => {
+
+  const {t}=useTranslation();
+
+  const json = [
+    {
+      title: t('home.artificialIntelligence.title'),
+      description1:t('home.artificialIntelligence.description01'),
+      description2:t('home.artificialIntelligence.description02'),
+      btn:t('home.artificialIntelligence.button'),
+      image: artificialIntelligence,
+    },
+    {
+      title: t('home.augmentedReality.title'),
+      description1:t('home.augmentedReality.description01'),
+      description2:t('home.augmentedReality.description02'),
+      btn:t('home.augmentedReality.button'),
+      image: augmentedReality,
+    },
+    {
+      title: t('home.facialRecognition.title'),
+      description1:t('home.facialRecognition.description01'),
+      description2:t('home.facialRecognition.description02'),
+      btn:t('home.facialRecognition.button'),
+      image: facialRecognition,
+    },
+  ];
+
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleClick = (index: number) => {

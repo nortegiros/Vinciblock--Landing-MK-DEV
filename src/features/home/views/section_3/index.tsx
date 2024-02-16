@@ -1,42 +1,40 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import Image from "next/image";
 import blockchain from "../../../../../public/assents/images/orbitas_vinci_block.gif";
-import tokenizacion from "../../../../../public/assents/images/tokenizacion.gif";
+import tokenization from "../../../../../public/assents/images/tokenizacion.gif";
 import exchange from "../../../../../public/assents/images/exchange.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
-
-const json = [
-  {
-    title: "Blockchain",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    btn: "Iniciar Ahora",
-    image: blockchain,
-  },
-  {
-    title: "Tokenización",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: tokenizacion,
-  },
-  {
-    title: "Exchange",
-    description1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-    description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.",
-    btn: "Iniciar Ahora",
-    image: exchange,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export const SectionThree: React.FC = () => {
+
+  const {t}=useTranslation();
+
+  const json = [
+    {
+      title: t('home.blockchain.title'),
+      description1:t('home.blockchain.description01'),
+      description2:t('home.blockchain.description02'),
+      btn:t('home.blockchain.button'),
+      image: blockchain,
+    },
+    {
+      title: t('home.tokenization.title'),
+      description1:t('home.tokenization.description01'),
+      description2:t('home.tokenization.description02'),
+      btn:t('home.tokenization.button'),
+      image: tokenization,
+    },
+    {
+      title: t('home.exchange.title'),
+      description1:t('home.exchange.description01'),
+      description2:t('home.exchange.description02'),
+      btn:t('home.exchange.button'),
+      image: exchange,
+    }
+  ];
+
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleClick = (index: number) => {

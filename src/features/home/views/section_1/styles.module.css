@@ -1,11 +1,51 @@
 .container{
+  position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 13rem 10rem 5rem;
+    padding: 13rem 10rem 3rem;
     gap: 1rem;
+    z-index: 1;
+}
+.background1{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -5rem;
+  z-index: -1;
+}
+.light1{
+  position: absolute;
+  z-index: 2;
+  width: 2.19794rem;
+  height: auto;
+  bottom: 8.5rem;
+  left: 50%;
+}
+.light2{
+  position: absolute;
+  z-index: 2;
+  width: 2.19794rem;
+  height: auto;
+  bottom: 0;
+  left: 27%;
+}
+.light3{
+  position: absolute;
+  z-index: 2;
+  width: 2.19794rem;
+  height: auto;
+  right: 20%;
+}
+.light4{
+  position: absolute;
+  z-index: 2;
+  width: 2.19794rem;
+  height: auto;
+  top: 6rem;
+  right: 30%;
 }
 .title h1{
   margin: 0;
@@ -82,6 +122,13 @@
   .container{
       padding: 13rem 4rem 5rem;
   }
+  .background1{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    bottom: -7rem;
+    z-index: -1;
+  }
 }
 @media(max-width: 1079px){
   .container{
@@ -106,10 +153,25 @@
     width: 10.8125rem;
     height: 4.125rem;
   }
+  .light1{
+    width: 1rem;
+  }
+  .light2{
+    width: 2rem;
+  }
+  .light3{
+    width: 2rem;
+  }
+  .light4{
+    width: 1rem;
+  }
 }
 @media(max-width: 767px){
   .container{
     padding: 4.5rem 1.21rem 3.5rem;
+  }
+  .background1{
+    bottom: -3rem;
   }
   .title h1{
     font-size: 1.875rem;
@@ -133,5 +195,19 @@
     font-size: 1rem;
     width: 30%;
     height: 2.6875rem;
+  }
+  .light1{
+    width: 1rem;
+  }
+  .light2{
+    width: 1rem;
+  }
+  .light3{
+    width: 1rem;
+  }
+  .light4{
+    width: 2rem;
+    top: 5rem;
+    right: 10%;
   }
 }
