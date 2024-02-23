@@ -6,8 +6,11 @@ import exchange from "../../../../../public/assents/images/exchange.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 export const SectionThree: React.FC = () => {
+
+  const router = useRouter();
 
   const {t}=useTranslation();
 
@@ -18,6 +21,7 @@ export const SectionThree: React.FC = () => {
       description2:t('home.blockchain.description02'),
       btn:t('home.blockchain.button'),
       image: blockchain,
+      link: 'https://www.vinciblock.com/blockchain'
     },
     {
       title: t('home.tokenization.title'),
@@ -25,6 +29,7 @@ export const SectionThree: React.FC = () => {
       description2:t('home.tokenization.description02'),
       btn:t('home.tokenization.button'),
       image: tokenization,
+      link: 'https://www.vinciblock.com/tokenization'
     },
     {
       title: t('home.exchange.title'),
@@ -32,6 +37,7 @@ export const SectionThree: React.FC = () => {
       description2:t('home.exchange.description02'),
       btn:t('home.exchange.button'),
       image: exchange,
+      link: 'https://www.vinciblock.com/exchange'
     }
   ];
 
@@ -78,7 +84,7 @@ export const SectionThree: React.FC = () => {
             <p>{json[selectedIndex].description1}</p>
             <p>{json[selectedIndex].description2}</p>
           </div>
-          <DarkButton text={json[selectedIndex].btn} />
+          <DarkButton text={json[selectedIndex].btn} onClick={()=>router.push(json[selectedIndex].link)}/>
         </div>
         <div
           className={selectedIndex == 0 ? styles.section2 : styles.section2b}

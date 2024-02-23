@@ -39,20 +39,20 @@
             "placeHolder": "Blockchain",
             "search": "Search"
         },
-        "services":{
-            "title":"Services",
-            "smartContract":"Smart Contract",
-            "ai":"Artificial Intelligence",
+        "services": {
+            "title": "Services",
+            "augmentedReality": "Augmented Reality",
+            "ai": "Artificial Intelligence",
             "facialRecognition": "Facial Recognition",
-            "tokenization":"Tokenization",
-            "productDevelopment":"Product Development",
-            "informaticSecurity":"Information Security",
-            "exchangeDevelopment":"Exchange Development",
-            "mobileApp":"Mobile Applications",
-            "securityAudits":"Security Audits",
-            "blockchainDevelopment":"Blockchain Development",
-            "paymentGateways":"Payment Gateways"
-        },
+            "tokenization": "Tokenization",
+            "productDevelopment": "Product Development",
+            "informaticSecurity": "Informatic Security",
+            "exchangeDevelopment": "Exchange Development",
+            "mobileApp": "Mobile Applications",
+            "securityAudits": "Security Audits",
+            "blockchainDevelopment": "Blockchain Development",
+            "products": "Products"
+          },
         "blockchain":{
             "title":"Blockchain",
             "description01":"It is a ledger technology that provides a secure and transparent record of digital transactions. It consists of a chain of encrypted data blocks linked together chronologically, each containing a set of confirmed transactions. What makes a blockchain unique is its decentralized nature and its ability to maintain data integrity without relying on a central authority. This decentralization is achieved through distributed consensus among multiple network nodes, ensuring that there is no single point of failure and that any attempt at manipulation is quickly detected and rejected by the majority of participants.",

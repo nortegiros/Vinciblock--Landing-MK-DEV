@@ -39,20 +39,20 @@
             "placeHolder": "Blockchain",
             "search": "Buscar"
         },
-        "services":{
-            "title":"Services",
-            "smartContract":"Smart Contract",
-            "ai":"Inteligencia Artificial",
+        "services": {
+            "title": "Servicios",
+            "augmentedReality": "Realidad Aumentada",
+            "ai": "Inteligencia Artificial",
             "facialRecognition": "Reconocimiento Facial",
-            "tokenization":"Tokenización",
-            "productDevelopment":"Desarrollo de Producto",
-            "informaticSecurity":"Seguridad Informática",
-            "exchangeDevelopment":"Desarrollo de Exchange",
-            "mobileApp":"Aplicaciones Móviles",
-            "securityAudits":"Auditorías de Seguridad",
-            "blockchainDevelopment":"Desarrollo de Blockchain",
-            "paymentGateways":"Pasarelas de Pago"
-        },
+            "tokenization": "Tokenización",
+            "productDevelopment": "Desarrollo de Producto",
+            "informaticSecurity": "Seguridad Informática",
+            "exchangeDevelopment": "Desarrollo de Exchange",
+            "mobileApp": "Aplicaciones Móviles",
+            "securityAudits": "Auditorías de Seguridad",
+            "blockchainDevelopment": "Desarrollo de Blockchain",
+            "products": "Productos"
+          },
         "blockchain":{
             "title":"Blockchain",
             "description01":"Es una tecnología de contabilidad que proporciona un registro seguro y transparente de transacciones digitales. Está compuesta por una cadena de bloques de datos encriptados y vinculados entre sí de forma cronológica, en los que cada uno de ellos contiene un conjunto de transacciones confirmadas. Lo que hace única a una blockchain es su naturaleza descentralizada y su capacidad para mantener la integridad de los datos sin depender de una autoridad central. Esta descentralización se logra mediante un consenso distribuido entre múltiples nodos de la red, lo que garantiza que no haya un solo punto de falla y que cualquier intento de manipulación sea rápidamente detectado y rechazado por la mayoría de los participantes. ",

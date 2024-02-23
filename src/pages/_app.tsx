@@ -5,6 +5,8 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { I18nextProvider } from "react-i18next";
 import i18n from "../translations/i18n";
+import ToastContainer from "@/components/toast";
+import { BackTopButton } from "@/components/Buttons/buttons";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -19,7 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <main className="bigContainer">
           <div className="container">
             <Header />
+            <ToastContainer/>
             <Component {...pageProps} />
+            <BackTopButton/>
             <Footer />
           </div>
         </main>

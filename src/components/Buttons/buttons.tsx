@@ -1,11 +1,19 @@
-
 import Image from "next/image";
 import arrowImage from "../../../public/assents/images/arrow.webp"
 import styles from "./styles.module.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { BiUpArrowAlt } from "react-icons/bi";
+
+const scrollToHeader = () => {
+  const headerSection = document.getElementById("header");
+  if (headerSection) {
+    headerSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 interface DarkButtonProps {
     text: string;
+    onClick: () => void;
   }
   interface BtnsProps {
     title01: string;
@@ -31,9 +39,9 @@ export const ArrowButton2 =()=>{
     )
 }
 
-export const DarkButton: React.FC<DarkButtonProps> = ({ text }) => {
+export const DarkButton: React.FC<DarkButtonProps> = ({ text, onClick }) => {
     return (
-      <div className={styles.darkBtn}>
+      <div className={styles.darkBtn} onClick={onClick}>
         <span>{text}</span>
         <div className={styles.arrowContainer}>
           <div className={styles.line}></div>
@@ -43,9 +51,9 @@ export const DarkButton: React.FC<DarkButtonProps> = ({ text }) => {
     );
   };
 
-  export const LightButton: React.FC<DarkButtonProps> = ({ text }) => {
+  export const LightButton: React.FC<DarkButtonProps> = ({ text, onClick }) => {
     return (
-      <div className={styles.lightBtn}>
+      <div className={styles.lightBtn} onClick={onClick}>
         <span>{text}</span>
         <div className={styles.arrowLightContainer}>
           <div className={styles.lineLight}></div>
@@ -55,3 +63,10 @@ export const DarkButton: React.FC<DarkButtonProps> = ({ text }) => {
     );
   };
 
+  export const BackTopButton =()=>{
+    return(
+        <div className={styles.backTopButton} onClick={scrollToHeader}>
+            <BiUpArrowAlt />
+        </div>
+    )
+}

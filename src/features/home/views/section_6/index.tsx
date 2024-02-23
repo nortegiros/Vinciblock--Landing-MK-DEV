@@ -6,8 +6,11 @@ import securityAudits from "../../../../../public/assents/images/auditoria_segur
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 export const SectionSix: React.FC = () => {
+
+  const router = useRouter();
 
   const {t}=useTranslation();
 
@@ -18,6 +21,7 @@ export const SectionSix: React.FC = () => {
       description2:t('home.informaticSecurity.description02'),
       btn:t('home.informaticSecurity.button'),
       image: informaticSecurity,
+      link: 'https://www.vinciblock.com/informatic-security'
     },
     {
       title: t('home.testModules.title'),
@@ -25,6 +29,7 @@ export const SectionSix: React.FC = () => {
       description2:t('home.testModules.description02'),
       btn:t('home.testModules.button'),
       image: testModules,
+      link: 'https://www.vinciblock.com/test-modules'
     },
     {
       title: t('home.securityAudits.title'),
@@ -32,6 +37,7 @@ export const SectionSix: React.FC = () => {
       description2:t('home.securityAudits.description02'),
       btn:t('home.securityAudits.button'),
       image: securityAudits,
+      link: 'https://www.vinciblock.com/security-audits'
     },
   ];
 
@@ -78,7 +84,7 @@ export const SectionSix: React.FC = () => {
             <p>{json[selectedIndex].description1}</p>
             <p>{json[selectedIndex].description2}</p>
           </div>
-          <DarkButton text={json[selectedIndex].btn} />
+          <DarkButton text={json[selectedIndex].btn} onClick={()=>router.push(json[selectedIndex].link)}/>
         </div>
         <div
           className={styles.section2b}

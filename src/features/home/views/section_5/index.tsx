@@ -5,8 +5,12 @@ import mobileApps from "../../../../../public/assents/images/mobileApp.webp";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 export const SectionFive: React.FC = () => {
+
+  const router = useRouter();
+
   const {t}=useTranslation();
 
   const json = [
@@ -16,6 +20,7 @@ export const SectionFive: React.FC = () => {
       description2:t('home.productDevelopment.description02'),
       btn:t('home.productDevelopment.button'),
       image: "",
+      link: 'https://www.vinciblock.com/product-development'
     },
     {
       title: t('home.products.title'),
@@ -23,6 +28,7 @@ export const SectionFive: React.FC = () => {
       description2:t('home.products.description02'),
       btn:t('home.products.button'),
       image: products,
+      link: 'https://www.vinciblock.com/products'
     },
     {
       title: t('home.mobileApps.title'),
@@ -30,6 +36,7 @@ export const SectionFive: React.FC = () => {
       description2:t('home.mobileApps.description02'),
       btn:t('home.mobileApps.button'),
       image: mobileApps,
+      link: 'https://www.vinciblock.com/mobile-apps'
     },
   ];
   
@@ -76,7 +83,7 @@ export const SectionFive: React.FC = () => {
             <p>{json[selectedIndex].description1}</p>
             <p>{json[selectedIndex].description2}</p>
           </div>
-          <DarkButton text={json[selectedIndex].btn} />
+          <DarkButton text={json[selectedIndex].btn} onClick={()=>router.push(json[selectedIndex].link)}/>
         </div>
         <div
           className={json[selectedIndex].image == "" ? styles.none : selectedIndex == 0 ? styles.section2 : styles.section2b}

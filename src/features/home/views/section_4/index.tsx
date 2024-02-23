@@ -6,10 +6,13 @@ import facialRecognition from "../../../../../public/assents/images/reconocimien
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 
 
 export const SectionFour: React.FC = () => {
+
+  const router = useRouter();
 
   const {t}=useTranslation();
 
@@ -20,6 +23,7 @@ export const SectionFour: React.FC = () => {
       description2:t('home.artificialIntelligence.description02'),
       btn:t('home.artificialIntelligence.button'),
       image: artificialIntelligence,
+      link: 'https://www.vinciblock.com/artificial-intelligence'
     },
     {
       title: t('home.augmentedReality.title'),
@@ -27,6 +31,7 @@ export const SectionFour: React.FC = () => {
       description2:t('home.augmentedReality.description02'),
       btn:t('home.augmentedReality.button'),
       image: augmentedReality,
+      link: 'https://www.vinciblock.com/augmented-reality'
     },
     {
       title: t('home.facialRecognition.title'),
@@ -34,6 +39,7 @@ export const SectionFour: React.FC = () => {
       description2:t('home.facialRecognition.description02'),
       btn:t('home.facialRecognition.button'),
       image: facialRecognition,
+      link: 'https://www.vinciblock.com/facial-recognition'
     },
   ];
 
@@ -80,7 +86,7 @@ export const SectionFour: React.FC = () => {
             <p>{json[selectedIndex].description1}</p>
             <p>{json[selectedIndex].description2}</p>
           </div>
-          <DarkButton text={json[selectedIndex].btn} />
+          <DarkButton text={json[selectedIndex].btn} onClick={()=>router.push(json[selectedIndex].link)}/>
         </div>
         <div
           className={styles.section2b}

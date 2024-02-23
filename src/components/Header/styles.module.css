@@ -69,7 +69,8 @@
     font-size: 1.0625rem;
     font-weight: 500;
     outline: none;
-    position: relative; /* Asegura que los estilos aplicados a ::after sean relativos a este elemento */
+    position: relative;
+    cursor: pointer;
 }
 
 .select1::after {

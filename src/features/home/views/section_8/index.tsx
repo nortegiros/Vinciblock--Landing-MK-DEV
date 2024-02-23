@@ -1,13 +1,16 @@
-import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import React, { useRef } from 'react';
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import styles from './styles.module.css';
 import getInTouch from '../../../../../public/assents/images/get_in_touch.gif';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
+import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 export const SectionEight: React.FC = () => {
   const {t}=useTranslation();
+  const formRef = useRef<HTMLFormElement>(null);
   const initialValues = {
     firstName: '',
     lastName: '',
@@ -24,8 +27,30 @@ export const SectionEight: React.FC = () => {
     message: Yup.string().required(t('home.contact.errors.message')),
   });
 
-  const onSubmit = (values: any) => {
-    console.log(values);
+  const onSubmit = (values: any, formikHelpers: FormikHelpers<any>) => {
+    const formElement = formRef.current;
+  
+    if (formElement) {
+      emailjs
+        .sendForm(
+          "service_a8whzxg",
+          "template_797i3bu",
+          formElement,
+          "B24x0IgrandYKdN-P"
+        )
+        .then(
+          (result) => {
+            console.log(result)
+            toast.success(t('home.contact.success'));
+            formikHelpers.resetForm();
+          },
+          (error) => {
+            toast.error(t('home.contact.error'));
+          }
+        );
+    } else {
+      console.error("Form element is null");
+    }
   };
 
   return (
@@ -36,7 +61,7 @@ export const SectionEight: React.FC = () => {
         <p>{t('home.contact.description01')}</p>
       </div>
       <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
-        <Form className={styles.form}>
+        <Form className={styles.form} ref={formRef}>
           <div className={styles.shortInput}>
             <div className={styles.inputContainer}>
                 <Field type="text" name="firstName" placeholder={t('home.contact.name')} className={styles.input} />

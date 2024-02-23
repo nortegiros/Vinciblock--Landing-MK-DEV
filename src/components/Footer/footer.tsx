@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className={styles.container}>
             <div className={styles.footer}>
                 <div className={styles.logoSection}>
-                    <a href='/'>VINCIBLOCK</a>
+                    <Link href='/'>VINCIBLOCK</Link>
                     <p>{t("footer.address")}</p>
                     <p>info@vinciblock.com</p>
                     <p>+1 234 456 678 89</p>
@@ -18,22 +19,22 @@ const Footer = () => {
                 <div className={styles.linksSection}>
                     <div className={styles.list}>
                         <h5>Links</h5>
-                        <a href='/'>{t("footer.home")}</a>
-                        <a href='/about'>{t("footer.about")}</a>
-                        <a href='/bookings'>{t("footer.bookings")}</a>
-                        <a href='/blog'>{t("footer.blog")}</a>
+                        <Link href='/'>{t("footer.home")}</Link>
+                        <Link href='/about'>{t("footer.about")}</Link>
+                        <Link href='/bookings'>{t("footer.bookings")}</Link>
+                        <Link href='/blog'>{t("footer.blog")}</Link>
                     </div>
                     <div className={styles.list}>
                         <h5>{t("footer.legal")}</h5>
-                        <a href='/terms'>{t("footer.terms")}</a>
-                        <a href='/privacy'>{t("footer.privacy")}</a>
-                        <a href='/cookies'>{t("footer.cookies")}</a>
+                        <Link href='/terms'>{t("footer.terms")}</Link>
+                        <Link href='/privacy'>{t("footer.privacy")}</Link>
+                        <Link href='/cookies'>{t("footer.cookies")}</Link>
                     </div>
                     <div className={styles.list}>
                         <h5>{t("footer.products")}</h5>
-                        <a href='/'>{t("footer.taketour")}</a>
-                        <a href='/'>{t("footer.livechat")}</a>
-                        <a href='/'>{t("footer.reviews")}</a>
+                        <Link href='/'>{t("footer.taketour")}</Link>
+                        <Link href='/'>{t("footer.livechat")}</Link>
+                        <Link href='/'>{t("footer.reviews")}</Link>
                     </div>
                 </div>
                 <div className={styles.newsletterSection}>
@@ -48,26 +49,26 @@ const Footer = () => {
                 <div className={styles.linksSection2}>
                     <div className={styles.list}>
                         <h5>Links</h5>
-                        <a href='/'>{t("footer.home")}</a>
-                        <a href='/about'>{t("footer.about")}</a>
-                        <a href='/bookings'>{t("footer.bookings")}</a>
-                        <a href='/blog'>{t("footer.blog")}</a>
+                        <Link href='/'>{t("footer.home")}</Link>
+                        <Link href='/about'>{t("footer.about")}</Link>
+                        <Link href='/bookings'>{t("footer.bookings")}</Link>
+                        <Link href='/blog'>{t("footer.blog")}</Link>
                     </div>
                     <div className={styles.list}>
                         <h5>{t("footer.legal")}</h5>
-                        <a href='/terms'>{t("footer.terms")}</a>
-                        <a href='/privacy'>{t("footer.privacy")}</a>
-                        <a href='/cookies'>{t("footer.cookies")}</a>
+                        <Link href='/terms'>{t("footer.terms")}</Link>
+                        <Link href='/privacy'>{t("footer.privacy")}</Link>
+                        <Link href='/cookies'>{t("footer.cookies")}</Link>
                     </div>
                     <div className={styles.list}>
                         <h5>{t("footer.products")}</h5>
-                        <a href='/'>{t("footer.taketour")}</a>
-                        <a href='/'>{t("footer.livechat")}</a>
-                        <a href='/'>{t("footer.reviews")}</a>
+                        <Link href='/'>{t("footer.taketour")}</Link>
+                        <Link href='/'>{t("footer.livechat")}</Link>
+                        <Link href='/'>{t("footer.reviews")}</Link>
                     </div>
                     <div className={styles.list}>
                         <h5>{t("footer.newsletter")}</h5>
-                        <a href='/'>{t("footer.newsletterdesc")}</a>
+                        <Link href='/'>{t("footer.newsletterdesc")}</Link>
                     </div>
                 </div>
                 <div className={styles.newsletterSection2}>
