@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import figures from "../../../../../public/assents/images/backgroundFirstPage2.webp";
-import backgroundLight from "../../../../../public/assents/images/backgroundFirstPage1.webp";
 import light from "../../../../../public/assents/images/light01.webp";
 
 export const SectionOne: React.FC = () => {
   const {t}= useTranslation();
+  const [searchTerm, setSearchTerm] = useState<string>("");
+
+  // Función para manejar los cambios en la entrada del usuario
+  const handleSearchInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleClick = () => {
+    let found = false;
+    const elementsToSearch = document.querySelectorAll("p, h2, option, img");
+    elementsToSearch.forEach(element => {
+      if (element instanceof HTMLParagraphElement || element instanceof HTMLHeadingElement || element instanceof HTMLOptionElement) {
+        if (element.textContent?.toLowerCase().includes(searchTerm.toLowerCase())) {
+          console.log("Found in:", element);
+          found = true;
+          // Resaltar la palabra encontrada
+          element.style.backgroundColor = "yellow";
+          // Dirigirte hacia la primera palabra encontrada
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+          return; // Detener el bucle una vez que se encuentre la primera coincidencia
+        }
+      } else if (element instanceof HTMLImageElement) {
+        if (element.alt.toLowerCase().includes(searchTerm.toLowerCase())) {
+          console.log("Found in image alt:", element.alt);
+          found = true;
+          // Dirigirte hacia la primera palabra encontrada
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+          return; // Detener el bucle una vez que se encuentre la primera coincidencia
+        }
+      }
+    });
+  
+    if (!found) {
+      console.log("No matches found");
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Image src={figures} alt="background1" className={styles.background1}/>
@@ -20,9 +56,10 @@ export const SectionOne: React.FC = () => {
         <h1>{t('home.frontPage.title.third')}</h1>
       </div>
       <p>{t('home.frontPage.description')}</p>
+      {/* aqui va el buscador */}
       <div className={styles.search}>
-        <input type="text" placeholder={t('home.frontPage.placeHolder')} />
-        <button>{t('home.frontPage.search')}</button>
+        <input type="text" placeholder={t('home.frontPage.placeHolder')} value={searchTerm} onChange={handleSearchInput}/>
+        <button onClick={handleClick}>{t('home.frontPage.search')}</button>
       </div>
     </div>
   );
