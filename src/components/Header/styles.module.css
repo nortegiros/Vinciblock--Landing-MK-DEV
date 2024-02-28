@@ -1,12 +1,13 @@
 .container{
-    position: relative;
+    position: fixed;
     width: 100%;
     height: auto;
     background-color: #010101;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.81rem 10rem
+    padding: 1.81rem 10rem;
+    z-index: 100;
 }
 .background{
     position: absolute;

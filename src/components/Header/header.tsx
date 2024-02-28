@@ -1,5 +1,4 @@
-'use client'
-import { FiMenu } from "react-icons/fi"; 
+import { FiMenu } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import { BiWorld } from "react-icons/bi";
 import styles from "./styles.module.css";
@@ -8,25 +7,33 @@ import Image from "next/image";
 import background from "../../../public/assents/images/backgroundFirstPage1.webp";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+  const [showMenu, setShowMenu] = useState(false);
+  const [backgroundOpacity, setBackgroundOpacity] = useState(0); // Estado para controlar la opacidad del fondo
 
-  const {t, i18n} = useTranslation();
-  const [showMenw, setShowMenu] = useState(false);
-  
-  let language = "en";
   useEffect(() => {
-    if(localStorage.getItem("language")){
-      language =  localStorage.getItem("language") || "en";
-      setSelectedLanguage(language);
-      i18n.changeLanguage(language);
-    }
+    const handleScroll = () => {
+      // Obtener la posición actual del scroll
+      const scrollPosition = window.scrollY;
+
+      // Calcular la nueva opacidad basada en la posición del scroll
+      const newOpacity = scrollPosition > 0 ? 1 : 0;
+
+      // Actualizar el estado de la opacidad del fondo
+      setBackgroundOpacity(newOpacity);
+    };
+
+    // Agregar el evento de scroll al montar el componente
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpiar el evento de scroll al desmontar el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-  const [selectedLanguage, setSelectedLanguage] = useState(language);  
-  const handleChangeMenu = () => {
-    setShowMenu(!showMenw);
-  }
+
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     localStorage.setItem("language", event.target.value);
-    setSelectedLanguage(event.target.value);
     i18n.changeLanguage(event.target.value);
   };
 
@@ -37,19 +44,21 @@ const Header = () => {
     }
   };
 
+  const handleChangeMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <div className={styles.container} id="header">
-      <Image src={background} alt="background" className={styles.background}/>
-      <div className={styles.headerTitle} >
+    <div className={styles.container} style={{ backgroundColor: `rgba(1, 1, 1, ${backgroundOpacity})` }}>
+      <Image src={background} alt="background" className={styles.background} />
+      <div className={styles.headerTitle}>
         <a href="/">VINCIBLOCK</a>
       </div>
-
-      {/* big screens */}
       <div className={styles.headerContent}>
         <div className={styles.headerButtons}>
           <div className={styles.select}>
             <BiWorld />
-            <select value={selectedLanguage} onChange={handleLanguageChange} className={styles.select1}>
+            <select value={i18n.language} onChange={handleLanguageChange} className={styles.select1}>
               <option value="en">{t('header.english')}</option>
               <option value="es">{t('header.spanish')}</option>
             </select>
@@ -57,27 +66,25 @@ const Header = () => {
           <button onClick={scrollToContacts}>{t('header.contact')}</button>
         </div>
       </div>
-
-      {/* small screens */}
       <div className={styles.headerContent2}>
         <div className={styles.select}>
-          <BiWorld className={styles.world}/>
-          <select value={selectedLanguage} onChange={handleLanguageChange} className={styles.select1}>
+          <BiWorld className={styles.world} />
+          <select value={i18n.language} onChange={handleLanguageChange} className={styles.select1}>
             <option value="en">{t('header.english')}</option>
             <option value="es">{t('header.spanish')}</option>
           </select>
-          {/* phone screens */}
-          <select value={selectedLanguage} onChange={handleLanguageChange} className={styles.phoneSelect}>
+          <select value={i18n.language} onChange={handleLanguageChange} className={styles.phoneSelect}>
             <option value="en">En</option>
             <option value="es">Es</option>
           </select>
         </div>
-        <button onClick={handleChangeMenu} className={styles.sandwitch}><FiMenu className={styles.icon}/></button>
-        <div className={showMenw? styles.menu : styles.none}>
+        <button onClick={handleChangeMenu} className={styles.sandwitch}><FiMenu className={styles.icon} /></button>
+        <div className={showMenu ? styles.menu : styles.none}>
           <div onClick={scrollToContacts}>{t("header.contact")}</div>
         </div>
       </div>
     </div>
   );
 };
+
 export default Header;

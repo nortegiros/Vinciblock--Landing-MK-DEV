@@ -5,7 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { BiUpArrowAlt } from "react-icons/bi";
 
 const scrollToHeader = () => {
-  const headerSection = document.getElementById("header");
+  const headerSection = document.getElementById("top");
   if (headerSection) {
     headerSection.scrollIntoView({ behavior: "smooth" });
   }

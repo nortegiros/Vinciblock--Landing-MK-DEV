@@ -22,18 +22,16 @@ export const SectionOne: React.FC = () => {
         if (element.textContent?.toLowerCase().includes(searchTerm.toLowerCase())) {
           console.log("Found in:", element);
           found = true;
-          // Resaltar la palabra encontrada
-          element.style.backgroundColor = "yellow";
-          // Dirigirte hacia la primera palabra encontrada
-          element.scrollIntoView({ behavior: "smooth", block: "center" });
+          // Dirigirte hacia el contenedor principal del elemento
+          element.parentElement?.scrollIntoView({ behavior: "smooth", block: "start" });
           return; // Detener el bucle una vez que se encuentre la primera coincidencia
         }
       } else if (element instanceof HTMLImageElement) {
         if (element.alt.toLowerCase().includes(searchTerm.toLowerCase())) {
           console.log("Found in image alt:", element.alt);
           found = true;
-          // Dirigirte hacia la primera palabra encontrada
-          element.scrollIntoView({ behavior: "smooth", block: "center" });
+          // Dirigirte hacia el contenedor principal del elemento
+          element.parentElement?.scrollIntoView({ behavior: "smooth", block: "start" });
           return; // Detener el bucle una vez que se encuentre la primera coincidencia
         }
       }
@@ -42,10 +40,10 @@ export const SectionOne: React.FC = () => {
     if (!found) {
       console.log("No matches found");
     }
-  };
+  };  
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="top">
       <Image src={figures} alt="background1" className={styles.background1}/>
       <Image src={light} alt="light1" className={styles.light1}/>
       <Image src={light} alt="light2" className={styles.light2}/>
@@ -56,7 +54,6 @@ export const SectionOne: React.FC = () => {
         <h1>{t('home.frontPage.title.third')}</h1>
       </div>
       <p>{t('home.frontPage.description')}</p>
-      {/* aqui va el buscador */}
       <div className={styles.search}>
         <input type="text" placeholder={t('home.frontPage.placeHolder')} value={searchTerm} onChange={handleSearchInput}/>
         <button onClick={handleClick}>{t('home.frontPage.search')}</button>
