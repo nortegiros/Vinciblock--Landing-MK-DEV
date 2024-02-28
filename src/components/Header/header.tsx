@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { BiWorld } from "react-icons/bi";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import background from "../../../public/assents/images/backgroundFirstPage1.webp";
 
