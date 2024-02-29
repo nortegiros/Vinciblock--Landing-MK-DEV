@@ -50,7 +50,6 @@ const Header = () => {
 
   return (
     <div className={styles.container} style={{ backgroundColor: `rgba(1, 1, 1, ${backgroundOpacity})` }}>
-      <Image src={background} alt="background" className={styles.background} />
       <div className={styles.headerTitle}>
         <a href="/">VINCIBLOCK</a>
       </div>

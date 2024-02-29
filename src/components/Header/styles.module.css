@@ -9,14 +9,6 @@
     padding: 1.81rem 10rem;
     z-index: 100;
 }
-.background{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
 .world{
     color: var(--primary-color);
     z-index: 2;
