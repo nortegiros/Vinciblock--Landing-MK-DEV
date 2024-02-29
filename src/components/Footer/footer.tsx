@@ -16,10 +16,10 @@ const Footer = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_a8whzxg",
-          "template_797i3bu",
+          "service_9j9r7wy",
+          "template_vsebyz4",
           form.current,
-          "B24x0IgrandYKdN-P"
+          "5LHQ4ckM4eev_Hb-R"
         )
         .then(
           (result) => {
@@ -70,7 +70,7 @@ const Footer = () => {
           <h5>{t("footer.newsletter")}</h5>
           <p>{t("footer.newsletterdesc")}</p>
           <form
-            id="emailForm"
+            id="email"
             className={styles.mail}
             ref={form}
             onSubmit={sendEmail}
@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
         <div className={styles.newsletterSection2}>
           <form
-            id="emailForm"
+            id="email"
             className={styles.mail}
             ref={form}
             onSubmit={sendEmail}
