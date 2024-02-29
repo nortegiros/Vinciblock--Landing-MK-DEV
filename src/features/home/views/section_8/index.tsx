@@ -54,7 +54,7 @@ export const SectionEight: React.FC = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contact">
       <Image src={getInTouch} alt='getInTouch' className={styles.getInTouch}/>
       <div className={styles.title}>
         <h2>{t('home.contact.title')}</h2>
