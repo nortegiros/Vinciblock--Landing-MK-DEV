@@ -74,10 +74,10 @@ export const SectionThree: React.FC = () => {
         </select>
       </div>
       <div
-        className={selectedIndex == 0 ? styles.container : styles.containerb}
+        className={styles.containerb}
       >
         <div
-          className={selectedIndex == 0 ? styles.section1 : styles.section1b}
+          className={styles.section1b}
         >
           <h2>{json[selectedIndex].title}</h2>
           <div className={styles.yellowLine}></div>
@@ -90,7 +90,7 @@ export const SectionThree: React.FC = () => {
           </Link>
         </div>
         <div
-          className={selectedIndex == 0 ? styles.section2 : styles.section2b}
+          className={styles.section2b}
         >
           <Image src={json[selectedIndex].image} alt="sectionImage" />
         </div>
