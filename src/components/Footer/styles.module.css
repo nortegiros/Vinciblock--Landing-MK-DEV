@@ -159,7 +159,26 @@
     line-height: 1.625rem;
     text-transform: capitalize;
 }
-
+.socialNetworks{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.network{
+    width: 2.5rem;
+    height: auto;
+}
+.network img{
+    width: 100%;
+    height: auto;
+}
+.network:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
 @media(max-width: 1500px){
     .footer{
         padding: 4rem 6.5rem 5.5rem;
@@ -258,8 +277,14 @@
     .newsletterSection2{
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
+    }
+    .socialNetworks{
+        width: 100%;
+        justify-content: center;
     }
     .mail{
         display: flex;

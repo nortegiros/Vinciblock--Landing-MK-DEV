@@ -4,9 +4,43 @@ import Link from "next/link";
 import { useRef, FormEvent } from "react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
+import instagram from '../../../public/assents/images/instagram.png';
+import facebook from '../../../public/assents/images/facebook.png';
+import linkedin from '../../../public/assents/images/linkedin.png';
+import medium from '../../../public/assents/images/medium.png';
+import github from '../../../public/assents/images/github.png';
+import x from '../../../public/assents/images/x.png';
+import Image from "next/image";
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const socialnetworks=[
+    {
+      link:"https://www.instagram.com/",
+      img:instagram
+    },
+    {
+      link:"https://www.facebook.com/",
+      img:facebook
+    },
+    {
+      link:"https://www.linkedin.com/",
+      img:linkedin
+    },
+    {
+      link:"https://medium.com/",
+      img:medium
+    },
+    {
+      link:"https://github.com/",
+      img:github
+    },
+    {
+      link:"https://twitter.com/",
+      img:x
+    }
+  ]
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -143,6 +177,13 @@ const Footer = () => {
             />
             <button type="submit">{t("footer.subscribe")}</button>
           </form>
+          <div className={styles.socialNetworks}>
+            {socialnetworks.map((s,i)=>(
+              <Link href={s.link} key={`sn-${i}`} className={styles.network} target="_blank" rel="noopener noreferrer">
+                <Image src={s.img} alt="networkImage"/>
+              </Link>
+            ))}
+          </div>
         </div>
         {/* small screen  */}
         <div className={styles.linksSection2}>
@@ -245,6 +286,13 @@ const Footer = () => {
             />
             <button type="submit">{t("footer.subscribe")}</button>
           </form>
+          <div className={styles.socialNetworks}>
+            {socialnetworks.map((s,i)=>(
+              <Link href={s.link} key={`sn-${i}`} className={styles.network} target="_blank" rel="noopener noreferrer">
+                <Image src={s.img} alt="networkImage"/>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
       <div className={styles.copyright}>{t("footer.copyrigth")}</div>
