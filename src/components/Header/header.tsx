@@ -64,14 +64,6 @@ const Header = () => {
 
       {/* big screens */}
       <div className={styles.headerContent}>
-        <div className={styles.list}>
-          <Link href="/solutions">{t("header.solutions")}</Link>
-          <Link href="/developers">{t("header.developers")}</Link>
-          <div onClick={() => router.push("/about/#team")}>
-            {t("header.team")}
-          </div>
-          <Link href="/company">{t("header.company")}</Link>
-        </div>
         <div className={styles.headerButtons}>
           <div className={styles.selectContainer} onClick={handleChangeLanguageMenu}>
             <BiWorld />
@@ -154,12 +146,6 @@ const Header = () => {
           <FiMenu className={styles.icon} />
         </button>
         <div className={showMenu ? styles.menu : styles.none}>
-          <Link href="/solutions">{t("header.solutions")}</Link>
-          <Link href="/developers">{t("header.developers")}</Link>
-          <div onClick={() => router.push("/about/#team")}>
-            {t("header.team")}
-          </div>
-          <Link href="/company">{t("header.company")}</Link>
           <div onClick={() => router.push(`${pathname}/#contact`)}>
             {t("header.contact")}
           </div>

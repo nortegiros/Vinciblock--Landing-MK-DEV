@@ -48,22 +48,82 @@ const Footer = () => {
         <div className={styles.linksSection}>
           <div className={styles.list}>
             <h5>Links</h5>
-            <Link href="/">{t("footer.home")}</Link>
-            <Link href="/about">{t("footer.about")}</Link>
-            <Link href="/bookings">{t("footer.bookings")}</Link>
-            <Link href="/blog">{t("footer.blog")}</Link>
+            <Link
+              href="https://www.vinciblock.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.home")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/about"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.about")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/bookings"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.bookings")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/blog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.blog")}
+            </Link>
           </div>
           <div className={styles.list}>
             <h5>{t("footer.legal")}</h5>
-            <Link href="/terms-of-use">{t("footer.terms")}</Link>
-            <Link href="/privacy-policy">{t("footer.privacy")}</Link>
-            <Link href="/cookies-policy">{t("footer.cookies")}</Link>
+            <Link
+              href="https://www.vinciblock.com/terms-of-use"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.terms")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.privacy")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/cookies-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.cookies")}
+            </Link>
           </div>
           <div className={styles.list}>
             <h5>{t("footer.products")}</h5>
-            <Link href="/take-tours">{t("footer.taketour")}</Link>
-            <Link href="/live-chat">{t("footer.livechat")}</Link>
-            <Link href="/reviews">{t("footer.reviews")}</Link>
+            <Link
+              href="https://www.vinciblock.com/take-tours"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.taketour")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/live-chat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.livechat")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.reviews")}
+            </Link>
           </div>
         </div>
         <div className={styles.newsletterSection}>
@@ -88,26 +148,86 @@ const Footer = () => {
         <div className={styles.linksSection2}>
           <div className={styles.list}>
             <h5>Links</h5>
-            <Link href="/">{t("footer.home")}</Link>
-            <Link href="/about">{t("footer.about")}</Link>
-            <Link href="/bookings">{t("footer.bookings")}</Link>
-            <Link href="/blog">{t("footer.blog")}</Link>
+            <Link
+              href="https://www.vinciblock.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.home")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/about"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.about")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/bookings"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.bookings")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/blog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.blog")}
+            </Link>
           </div>
           <div className={styles.list}>
             <h5>{t("footer.legal")}</h5>
-            <Link href="/terms-of-use">{t("footer.terms")}</Link>
-            <Link href="/privacy-policy">{t("footer.privacy")}</Link>
-            <Link href="/cookies-policy">{t("footer.cookies")}</Link>
+            <Link
+              href="https://www.vinciblock.com/terms-of-use"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.terms")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.privacy")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/cookies-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.cookies")}
+            </Link>
           </div>
           <div className={styles.list}>
             <h5>{t("footer.products")}</h5>
-            <Link href="/take-tours">{t("footer.taketour")}</Link>
-            <Link href="/live-chat">{t("footer.livechat")}</Link>
-            <Link href="/reviews">{t("footer.reviews")}</Link>
+            <Link
+              href="https://www.vinciblock.com/take-tours"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.taketour")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/live-chat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.livechat")}
+            </Link>
+            <Link
+              href="https://www.vinciblock.com/reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("footer.reviews")}
+            </Link>
           </div>
           <div className={styles.list}>
             <h5>{t("footer.newsletter")}</h5>
-            <Link href="/">{t("footer.newsletterdesc")}</Link>
+            <p>{t("footer.newsletterdesc")}</p>
           </div>
         </div>
         <div className={styles.newsletterSection2}>
