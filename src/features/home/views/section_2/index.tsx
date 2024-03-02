@@ -2,6 +2,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 interface Card {
   title: string;
@@ -65,13 +66,13 @@ export const SectionTwo: React.FC = () => {
       </div>
       <div className={styles.cardsContainer}>
         {cards.map((card, i) => (
-          <div key={i} className={i==11 ? styles.none :top.includes(i) ? styles.card1 : styles.card2} onClick={()=>{router.push(`/${card.link}`)}}>
+          <Link key={i} className={i==11 ? styles.none :top.includes(i) ? styles.card1 : styles.card2} href={card.link} target="_blank" rel="noopener noreferrer">
             <h3>{card.title}</h3>
             <div className={i==11? styles.arrowNone : styles.arrowContainer}>
               <div className={styles.line}></div>
               <MdKeyboardArrowRight className={styles.arrow}/>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

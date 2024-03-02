@@ -1,5 +1,4 @@
 .container{
-    position: fixed;
     width: 100%;
     height: auto;
     background-color: #010101;
@@ -7,15 +6,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.81rem 10rem;
+    position: fixed;
     z-index: 100;
 }
-.world{
-    color: var(--primary-color);
-    z-index: 2;
-}
+
 .headerTitle{
     cursor: pointer;
-    z-index: 2;
 }
 .headerTitle a{
     margin: 0;
@@ -33,65 +29,77 @@
     justify-content: flex-end;
     align-items: center;
     gap: 5.19rem;
-    z-index: 2;
 }
 .list{
     display: flex;
     gap: 0.94rem;
 }
-.list a{
+.list a, .list div{
     color: var(--primary-color);
     font-family: SpaceGrotesk;
     font-size: 1.0625rem;
     font-weight: 400;
+    cursor: pointer;
 }
 .headerButtons{
     display: flex;
     gap: 2.56rem;
 }
-.select{
+.selectContainer2{
+    display: none;
+}
+.selectContainer{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
 }
-.select1 {
-    background-color: transparent;
+.languageMenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.5px solid #ffffff5b;
+    color: var(--primary-color);
+    top: 2.75rem;
+    left: 1.3rem;
+    width: 6rem;
+    font-family: SpaceGrotesk;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    z-index: 100;
+}
+.languageOptions{
+    padding: 0.5rem;
+}
+.languageOptions:hover{
+    width: 100%;
+    height: 50%;
+    background-color: #f4c7563b;
+}
+.none{
+    display: none;
+}
+.select1{
+    background-color: #010101;
     border: none;
     color: var(--primary-color);
     font-family: SpaceGrotesk;
     font-size: 1.0625rem;
     font-weight: 500;
     outline: none;
-    position: relative;
-    cursor: pointer;
-}
-
-.select1::after {
-    content: '\25BE'; /* Carácter Unicode para la flecha hacia abajo */
-    position: absolute;
-    top: 50%;
-    right: 10px; /* Ajusta el espaciado de la flecha hacia abajo */
-    transform: translateY(-50%);
-    color: var(--primary-color); /* Color de la flecha hacia abajo */
-}
-
-.select1:focus::after {
-    color: #010101; /* Color de la flecha hacia abajo cuando el select está enfocado */
-}
-
-/* Estilos del menú desplegable */
-.select1 option {
-    background-color: #010101; /* Color de fondo del menú desplegable */
-    color: var(--primary-color); /* Color del texto en el menú desplegable */
+    
 }
 .phoneSelect{
     display: none;
 }
 .headerButtons button{
     cursor: pointer;
-    display: flex;
     width: 11.8125rem;
     height: 2.8125rem;
+    display: flex;
     padding: 0.625rem;
     justify-content: center;
     align-items: center;
@@ -100,7 +108,7 @@
     font-size: 1.0625rem;
     font-weight: 400;
     border-radius: 0.5rem;
-    border: 1px solid #F4C656;
+    border: 0.5px solid #f4c656;
     transition: all 0.3s ease;
     background-color: #01010100;
 }
@@ -145,23 +153,24 @@
         justify-content: flex-end;
         align-items: center;
         gap: 2.75rem;
-        z-index: 2;
     }
     .none{
         display: none;
     }
+    .languageMenu{
+        top: 1.75rem;
+    }
     .sandwitch{
-        background-color: #01010100;
+        background-color: #010101;
         border: none;
         margin: 0;
         padding: 0;
         width: 1.32rem;
-        z-index: 2;
+        cursor: pointer;
     }
     .icon{
         width: 100%;
         height: auto;
-        color: var(--primary-color);
     }
     .menu{
         position: absolute;
@@ -170,7 +179,7 @@
         align-items: flex-end;
         gap: 0.75rem;
         padding: 1rem 0.5rem;
-        background-color: #01010100;
+        background-color: #010101;
         color: var(--primary-color);
         top: 1.5rem;
         width: 150px;
@@ -178,6 +187,13 @@
         font-size: 1.0625rem;
         font-weight: 400;
         z-index: 100;
+    }
+    .menu div{
+        background-color: #01010100;
+        font-family: SpaceGrotesk;
+        font-size: 1.0625rem;
+        font-weight: 400;
+        cursor: pointer;
     }
 }
 @media(max-width: 767px){
@@ -191,36 +207,23 @@
         font-size: 1.1rem;
         letter-spacing: 0.5rem;
     }
-    .phoneSelect{
-        display: flex;
-        background-color: #01010100;
-        border: none;
-        color: var(--primary-color);
-        font-family: SpaceGrotesk;
-        font-size: 1rem;
-        font-weight: 500;
-        outline: none;
-    }
-    .phoneSelect::after {
-        content: '\25BE'; /* Carácter Unicode para la flecha hacia abajo */
-        position: absolute;
-        top: 50%;
-        right: 10px; /* Ajusta el espaciado de la flecha hacia abajo */
-        transform: translateY(-50%);
-        color: var(--primary-color); /* Color de la flecha hacia abajo */
-    }
-    
-    .phoneSelect:focus::after {
-        color: #010101; /* Color de la flecha hacia abajo cuando el select está enfocado */
-    }
-    
-    /* Estilos del menú desplegable */
-    .phoneSelect option {
-        background-color: #010101; /* Color de fondo del menú desplegable */
-        color: var(--primary-color);
-        font-size: 0.8rem;
-    }
-    .select1{
+    .selectContainer{
         display: none;
+    }
+    .selectContainer2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+        cursor: pointer;
+    }
+    .languageMenu{
+        left: 1rem;
+        width: 3rem;
+        font-size: 1rem;
+    }
+    .languageOptions{
+        padding: 0.25rem 0.5rem;
     }
 }

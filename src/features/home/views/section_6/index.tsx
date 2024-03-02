@@ -7,6 +7,7 @@ import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export const SectionSix: React.FC = () => {
 
@@ -84,7 +85,9 @@ export const SectionSix: React.FC = () => {
             <p>{json[selectedIndex].description1}</p>
             <p>{json[selectedIndex].description2}</p>
           </div>
-          <DarkButton text={json[selectedIndex].btn} onClick={()=>router.push(json[selectedIndex].link)}/>
+          <Link href={json[selectedIndex].link} target="_blank" rel="noopener noreferrer">
+            <DarkButton text={json[selectedIndex].btn}/>
+          </Link>
         </div>
         <div
           className={styles.section2b}

@@ -2,6 +2,7 @@ import { LightButton } from '@/components/Buttons/buttons';
 import styles from './styles.module.css'
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export const SectionSeven: React.FC = () => {
 
@@ -12,7 +13,9 @@ export const SectionSeven: React.FC = () => {
     return (
         <div className={styles.container}>
           <h2>{t('home.startNow')}</h2>
-          <LightButton text={t('home.startButton')} onClick={()=>router.push('https://www.vinciblock.com/')}/>
+          <Link href={'https://www.vinciblock.com/'} target="_blank" rel="noopener noreferrer">
+            <LightButton text={t('home.startButton')}/>
+          </Link>
         </div>
       );
 }

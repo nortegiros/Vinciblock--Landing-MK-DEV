@@ -104,6 +104,8 @@
 }
 .btnContainer {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 .form button {
   display: flex;
