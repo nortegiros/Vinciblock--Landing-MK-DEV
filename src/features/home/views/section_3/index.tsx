@@ -1,4 +1,5 @@
-import { use, useState } from "react";
+import { AiOutlineLoading3Quarters } from "react-icons/ai"; 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import blockchain from "../../../../../public/assents/images/orbitas_vinci_block.gif";
 import tokenization from "../../../../../public/assents/images/tokenizacion.gif";
@@ -6,12 +7,9 @@ import exchange from "../../../../../public/assents/images/exchange.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 export const SectionThree: React.FC = () => {
-
-  const router = useRouter();
 
   const {t}=useTranslation();
 
@@ -43,11 +41,18 @@ export const SectionThree: React.FC = () => {
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+      setLoading(false)
+  }, [selectedIndex]);
 
   const handleClick = (index: number) => {
+    setLoading(true);
     setSelectedIndex(index);
   };
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setLoading(true);
     setSelectedIndex(parseInt(event.target.value));
   };
 
@@ -92,7 +97,13 @@ export const SectionThree: React.FC = () => {
         <div
           className={styles.section2b}
         >
-          <Image src={json[selectedIndex].image} alt="sectionImage" />
+           {loading ? (
+            <div className={styles.loading}>
+              <AiOutlineLoading3Quarters className={styles.spinner}/>
+            </div>
+          ) : (
+            <Image src={json[selectedIndex].image} alt="sectionImage" />
+          )}
         </div>
       </div>
     </div>

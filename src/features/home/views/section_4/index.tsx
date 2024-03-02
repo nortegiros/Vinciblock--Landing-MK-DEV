@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import artificialIntelligence from "../../../../../public/assents/images/inteligencia_artificial.gif";
 import augmentedReality from "../../../../../public/assents/images/realidad_aumentada.gif";
@@ -8,6 +8,7 @@ import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 
 
@@ -45,11 +46,18 @@ export const SectionFour: React.FC = () => {
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+      setLoading(false)
+  }, [selectedIndex]);
 
   const handleClick = (index: number) => {
+    setLoading(true);
     setSelectedIndex(index);
   };
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setLoading(true);
     setSelectedIndex(parseInt(event.target.value));
   };
 
@@ -94,7 +102,13 @@ export const SectionFour: React.FC = () => {
         <div
           className={styles.section2b}
         >
-          <Image src={json[selectedIndex].image} alt="sectionImage" />
+          {loading ? (
+            <div className={styles.loading}>
+              <AiOutlineLoading3Quarters className={styles.spinner}/>
+            </div>
+          ) : (
+            <Image src={json[selectedIndex].image} alt="sectionImage" />
+          )}
         </div>
       </div>
     </div>

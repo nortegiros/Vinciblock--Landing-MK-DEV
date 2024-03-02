@@ -130,6 +130,28 @@
     justify-content: center;
     align-items: center;
 }
+.loading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    width: 3rem;
+    height: auto;
+    color: #eab946dc;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 .section2 img{
     width: 100%;
     max-width: 40rem;

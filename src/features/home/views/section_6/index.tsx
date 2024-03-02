@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import informaticSecurity from "../../../../../public/assents/images/seguridad_informatica.gif";
-import testModules from "../../../../../public/assents/images/red_dorada.webp";
+import testModules from "../../../../../public/assents/images/modulos_de_prueba.gif";
 import securityAudits from "../../../../../public/assents/images/auditoria_seguridad.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 export const SectionSix: React.FC = () => {
 
@@ -43,11 +44,18 @@ export const SectionSix: React.FC = () => {
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+      setLoading(false)
+  }, [selectedIndex]);
 
   const handleClick = (index: number) => {
+    setLoading(true);
     setSelectedIndex(index);
   };
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setLoading(true);
     setSelectedIndex(parseInt(event.target.value));
   };
 
@@ -92,7 +100,13 @@ export const SectionSix: React.FC = () => {
         <div
           className={styles.section2b}
         >
-          <Image src={json[selectedIndex].image} alt="sectionImage" />
+          {loading ? (
+            <div className={styles.loading}>
+              <AiOutlineLoading3Quarters className={styles.spinner}/>
+            </div>
+          ) : (
+            <Image src={json[selectedIndex].image} alt="sectionImage" />
+          )}
         </div>
       </div>
     </div>
