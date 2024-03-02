@@ -5,7 +5,7 @@ import Image from "next/image";
 import figures from "../../../../../public/assents/images/backgroundFirstPage2.webp";
 import light from "../../../../../public/assents/images/light01.webp";
 
-export const SectionOne: React.FC = () => {
+export const Hero: React.FC = () => {
   const {t}= useTranslation();
   const [searchTerm, setSearchTerm] = useState<string>("");
 

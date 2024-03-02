@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import informaticSecurity from "../../../../../public/assents/images/seguridad_informatica.gif";
-import testModules from "../../../../../public/assents/images/modulos_de_prueba.gif";
-import securityAudits from "../../../../../public/assents/images/auditoria_seguridad.gif";
+import artificialIntelligence from "../../../../../public/assents/images/inteligencia_artificial.gif";
+import augmentedReality from "../../../../../public/assents/images/realidad_aumentada.gif";
+import facialRecognition from "../../../../../public/assents/images/reconocimiento_facial.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
@@ -10,7 +10,9 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-export const SectionSix: React.FC = () => {
+
+
+export const ArtificialInteligence: React.FC = () => {
 
   const router = useRouter();
 
@@ -18,28 +20,28 @@ export const SectionSix: React.FC = () => {
 
   const json = [
     {
-      title: t('home.informaticSecurity.title'),
-      description1:t('home.informaticSecurity.description01'),
-      description2:t('home.informaticSecurity.description02'),
-      btn:t('home.informaticSecurity.button'),
-      image: informaticSecurity,
-      link: 'https://www.vinciblock.com/informatic-security'
+      title: t('home.artificialIntelligence.title'),
+      description1:t('home.artificialIntelligence.description01'),
+      description2:t('home.artificialIntelligence.description02'),
+      btn:t('home.artificialIntelligence.button'),
+      image: artificialIntelligence,
+      link: 'https://www.vinciblock.com/artificial-intelligence'
     },
     {
-      title: t('home.testModules.title'),
-      description1:t('home.testModules.description01'),
-      description2:t('home.testModules.description02'),
-      btn:t('home.testModules.button'),
-      image: testModules,
-      link: 'https://www.vinciblock.com/test-modules'
+      title: t('home.augmentedReality.title'),
+      description1:t('home.augmentedReality.description01'),
+      description2:t('home.augmentedReality.description02'),
+      btn:t('home.augmentedReality.button'),
+      image: augmentedReality,
+      link: 'https://www.vinciblock.com/augmented-reality'
     },
     {
-      title: t('home.securityAudits.title'),
-      description1:t('home.securityAudits.description01'),
-      description2:t('home.securityAudits.description02'),
-      btn:t('home.securityAudits.button'),
-      image: securityAudits,
-      link: 'https://www.vinciblock.com/security-audits'
+      title: t('home.facialRecognition.title'),
+      description1:t('home.facialRecognition.description01'),
+      description2:t('home.facialRecognition.description02'),
+      btn:t('home.facialRecognition.button'),
+      image: facialRecognition,
+      link: 'https://www.vinciblock.com/facial-recognition'
     },
   ];
 

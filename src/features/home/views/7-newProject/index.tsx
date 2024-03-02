@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-export const SectionSeven: React.FC = () => {
+export const NewProject: React.FC = () => {
 
     const router = useRouter();
 

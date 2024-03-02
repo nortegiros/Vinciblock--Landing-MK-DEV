@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-export const SectionFive: React.FC = () => {
+export const Products: React.FC = () => {
 
   const router = useRouter();
 

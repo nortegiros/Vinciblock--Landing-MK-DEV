@@ -1,48 +1,43 @@
+import { AiOutlineLoading3Quarters } from "react-icons/ai"; 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import artificialIntelligence from "../../../../../public/assents/images/inteligencia_artificial.gif";
-import augmentedReality from "../../../../../public/assents/images/realidad_aumentada.gif";
-import facialRecognition from "../../../../../public/assents/images/reconocimiento_facial.gif";
+import blockchain from "../../../../../public/assents/images/orbitas_vinci_block.gif";
+import tokenization from "../../../../../public/assents/images/tokenizacion.gif";
+import exchange from "../../../../../public/assents/images/exchange.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
-import { useRouter } from "next/router";
 import Link from "next/link";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-
-
-export const SectionFour: React.FC = () => {
-
-  const router = useRouter();
+export const Blockchain: React.FC = () => {
 
   const {t}=useTranslation();
 
   const json = [
     {
-      title: t('home.artificialIntelligence.title'),
-      description1:t('home.artificialIntelligence.description01'),
-      description2:t('home.artificialIntelligence.description02'),
-      btn:t('home.artificialIntelligence.button'),
-      image: artificialIntelligence,
-      link: 'https://www.vinciblock.com/artificial-intelligence'
+      title: t('home.blockchain.title'),
+      description1:t('home.blockchain.description01'),
+      description2:t('home.blockchain.description02'),
+      btn:t('home.blockchain.button'),
+      image: blockchain,
+      link: 'https://www.vinciblock.com/blockchain'
     },
     {
-      title: t('home.augmentedReality.title'),
-      description1:t('home.augmentedReality.description01'),
-      description2:t('home.augmentedReality.description02'),
-      btn:t('home.augmentedReality.button'),
-      image: augmentedReality,
-      link: 'https://www.vinciblock.com/augmented-reality'
+      title: t('home.tokenization.title'),
+      description1:t('home.tokenization.description01'),
+      description2:t('home.tokenization.description02'),
+      btn:t('home.tokenization.button'),
+      image: tokenization,
+      link: 'https://www.vinciblock.com/tokenization'
     },
     {
-      title: t('home.facialRecognition.title'),
-      description1:t('home.facialRecognition.description01'),
-      description2:t('home.facialRecognition.description02'),
-      btn:t('home.facialRecognition.button'),
-      image: facialRecognition,
-      link: 'https://www.vinciblock.com/facial-recognition'
-    },
+      title: t('home.exchange.title'),
+      description1:t('home.exchange.description01'),
+      description2:t('home.exchange.description02'),
+      btn:t('home.exchange.button'),
+      image: exchange,
+      link: 'https://www.vinciblock.com/exchange'
+    }
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -102,7 +97,7 @@ export const SectionFour: React.FC = () => {
         <div
           className={styles.section2b}
         >
-          {loading ? (
+           {loading ? (
             <div className={styles.loading}>
               <AiOutlineLoading3Quarters className={styles.spinner}/>
             </div>

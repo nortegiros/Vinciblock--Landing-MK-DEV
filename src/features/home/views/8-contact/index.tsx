@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 
-export const SectionEight: React.FC = () => {
+export const Contact: React.FC = () => {
   const {t}=useTranslation();
   const formRef = useRef<HTMLFormElement>(null);
   const initialValues = {

@@ -1,26 +1,22 @@
 import {
-  SectionEight,
-  SectionFive,
-  SectionFour,
-  SectionOne,
-  SectionSeven,
-  SectionSix,
-  SectionThree,
-  SectionTwo,
+  ArtificialInteligence,
+  Blockchain,
+  Contact,
+  Hero, NewProject, Products, Security, Services,
 } from "../views";
 import styles from "./styles.module.css";
 
 const Home = () => {
   return (
     <div className={styles.container}>
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive />
-      <SectionSix />
-      <SectionSeven />
-      <SectionEight />
+      <Hero />
+      <Services />
+      <Blockchain />
+      <ArtificialInteligence />
+      <Products />
+      <Security />
+      <NewProject />
+      <Contact />
     </div>
   );
 };

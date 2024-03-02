@@ -1,43 +1,46 @@
-import { AiOutlineLoading3Quarters } from "react-icons/ai"; 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import blockchain from "../../../../../public/assents/images/orbitas_vinci_block.gif";
-import tokenization from "../../../../../public/assents/images/tokenizacion.gif";
-import exchange from "../../../../../public/assents/images/exchange.gif";
+import informaticSecurity from "../../../../../public/assents/images/seguridad_informatica.gif";
+import testModules from "../../../../../public/assents/images/modulos_de_prueba.gif";
+import securityAudits from "../../../../../public/assents/images/auditoria_seguridad.gif";
 import { DarkButton } from "@/components/Buttons/buttons";
 import styles from "./styles.module.css";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 import Link from "next/link";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-export const SectionThree: React.FC = () => {
+export const Security: React.FC = () => {
+
+  const router = useRouter();
 
   const {t}=useTranslation();
 
   const json = [
     {
-      title: t('home.blockchain.title'),
-      description1:t('home.blockchain.description01'),
-      description2:t('home.blockchain.description02'),
-      btn:t('home.blockchain.button'),
-      image: blockchain,
-      link: 'https://www.vinciblock.com/blockchain'
+      title: t('home.informaticSecurity.title'),
+      description1:t('home.informaticSecurity.description01'),
+      description2:t('home.informaticSecurity.description02'),
+      btn:t('home.informaticSecurity.button'),
+      image: informaticSecurity,
+      link: 'https://www.vinciblock.com/informatic-security'
     },
     {
-      title: t('home.tokenization.title'),
-      description1:t('home.tokenization.description01'),
-      description2:t('home.tokenization.description02'),
-      btn:t('home.tokenization.button'),
-      image: tokenization,
-      link: 'https://www.vinciblock.com/tokenization'
+      title: t('home.testModules.title'),
+      description1:t('home.testModules.description01'),
+      description2:t('home.testModules.description02'),
+      btn:t('home.testModules.button'),
+      image: testModules,
+      link: 'https://www.vinciblock.com/test-modules'
     },
     {
-      title: t('home.exchange.title'),
-      description1:t('home.exchange.description01'),
-      description2:t('home.exchange.description02'),
-      btn:t('home.exchange.button'),
-      image: exchange,
-      link: 'https://www.vinciblock.com/exchange'
-    }
+      title: t('home.securityAudits.title'),
+      description1:t('home.securityAudits.description01'),
+      description2:t('home.securityAudits.description02'),
+      btn:t('home.securityAudits.button'),
+      image: securityAudits,
+      link: 'https://www.vinciblock.com/security-audits'
+    },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -97,7 +100,7 @@ export const SectionThree: React.FC = () => {
         <div
           className={styles.section2b}
         >
-           {loading ? (
+          {loading ? (
             <div className={styles.loading}>
               <AiOutlineLoading3Quarters className={styles.spinner}/>
             </div>

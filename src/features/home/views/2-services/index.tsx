@@ -9,7 +9,7 @@ interface Card {
   link: string;
 }
 
-export const SectionTwo: React.FC = () => {
+export const Services: React.FC = () => {
   const router = useRouter();
   const {t}= useTranslation();
   const cards : Card[] = [
