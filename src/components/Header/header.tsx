@@ -1,89 +1,157 @@
+import { IoIosArrowUp } from "react-icons/io"; 
+import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import { BiWorld } from "react-icons/bi";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import background from "../../../public/assents/images/backgroundFirstPage1.webp";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
-  const [backgroundOpacity, setBackgroundOpacity] = useState(0); // Estado para controlar la opacidad del fondo
+  const [showLanguageMenu, setShowLanguageMenu] = useState(false);
+
+  const router = useRouter();
+
+  let pathname = "";
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Obtener la posición actual del scroll
-      const scrollPosition = window.scrollY;
+    pathname = window.location.pathname;
+  });
 
-      // Calcular la nueva opacidad basada en la posición del scroll
-      const newOpacity = scrollPosition > 0 ? 1 : 0;
-
-      // Actualizar el estado de la opacidad del fondo
-      setBackgroundOpacity(newOpacity);
-    };
-
-    // Agregar el evento de scroll al montar el componente
-    window.addEventListener("scroll", handleScroll);
-
-    // Limpiar el evento de scroll al desmontar el componente
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    localStorage.setItem("language", event.target.value);
-    i18n.changeLanguage(event.target.value);
-  };
-
-  const scrollToContacts = () => {
-    const contactsSection = document.getElementById("contact");
-    if (contactsSection) {
-      contactsSection.scrollIntoView({ behavior: "smooth" });
+  let language = "es";
+  useEffect(() => {
+    if (localStorage.getItem("language")) {
+      language = localStorage.getItem("language") || "es";
+      setSelectedLanguage(language);
+      i18n.changeLanguage(language);
     }
-  };
-
+  }, []);
+  const [selectedLanguage, setSelectedLanguage] = useState(language);
+  const [selectedNameLanguage, setSelectedNameLanguage] = useState(
+    t("header.spanish")
+  );
+  const [selectedNameLanguage2, setSelectedNameLanguage2] = useState(
+    "Es"
+  );
   const handleChangeMenu = () => {
     setShowMenu(!showMenu);
   };
+  const handleChangeLanguageMenu = () => {
+    setShowLanguageMenu(!showLanguageMenu);
+  };
+  const handleLanguageChange = (actualLangiage: string) => {
+    localStorage.setItem("language", actualLangiage);
+    setSelectedLanguage(actualLangiage);
+    i18n.changeLanguage(actualLangiage);
+    setShowLanguageMenu(!showLanguageMenu);
+    if (actualLangiage === "es") {
+      setSelectedNameLanguage(t("header.spanish"));
+      setSelectedNameLanguage2("Es");
+    } else {
+      setSelectedNameLanguage(t("header.english"));
+      setSelectedNameLanguage2("En");
+    }
+  };
 
   return (
-    <div className={styles.container} style={{ backgroundColor: `rgba(1, 1, 1, ${backgroundOpacity})` }}>
+    <div className={styles.container}>
       <div className={styles.headerTitle}>
-        <a href="/">VINCIBLOCK</a>
+        <Link href="/">VINCIBLOCK</Link>
       </div>
+
+      {/* big screens */}
       <div className={styles.headerContent}>
         <div className={styles.headerButtons}>
-          <div className={styles.select}>
+          <div className={styles.selectContainer} onClick={handleChangeLanguageMenu}>
             <BiWorld />
-            <select value={i18n.language} onChange={handleLanguageChange} className={styles.select1}>
-              <option value="en">{t('header.english')}</option>
-              <option value="es">{t('header.spanish')}</option>
-            </select>
+            <div className={styles.select1}>
+              {selectedNameLanguage}
+            </div>
+            {showLanguageMenu? <IoIosArrowUp /> : <IoIosArrowDown />}
+            <div
+              className={showLanguageMenu ? styles.languageMenu : styles.none}
+            >
+              <div
+                onClick={() => handleLanguageChange("en")}
+                className={styles.languageOptions}
+              >
+                {t("header.english")}
+              </div>
+              <div
+                onClick={() => handleLanguageChange("es")}
+                className={styles.languageOptions}
+              >
+                {t("header.spanish")}
+              </div>
+            </div>
           </div>
-          <button onClick={scrollToContacts}>{t('header.contact')}</button>
+          <button onClick={() => router.push(`${pathname}/#contact`)}>
+            {t("header.contact")}
+          </button>
         </div>
       </div>
+      {/* small screens */}
       <div className={styles.headerContent2}>
-        <div className={styles.select}>
-          <BiWorld className={styles.world} />
-          <select value={i18n.language} onChange={handleLanguageChange} className={styles.select1}>
-            <option value="en">{t('header.english')}</option>
-            <option value="es">{t('header.spanish')}</option>
-          </select>
-          <select value={i18n.language} onChange={handleLanguageChange} className={styles.phoneSelect}>
-            <option value="en">En</option>
-            <option value="es">Es</option>
-          </select>
+        <div className={styles.selectContainer}  onClick={handleChangeLanguageMenu}>
+          <BiWorld />
+          <div className={styles.select1}>
+            {selectedNameLanguage}
+          </div>
+          {showLanguageMenu? <IoIosArrowUp /> : <IoIosArrowDown />}
+          <div
+            className={showLanguageMenu ? styles.languageMenu : styles.none}
+          >
+            <div
+              onClick={() => handleLanguageChange("en")}
+              className={styles.languageOptions}
+            >
+              {t("header.english")}
+            </div>
+            <div
+              onClick={() => handleLanguageChange("es")}
+              className={styles.languageOptions}
+            >
+              {t("header.spanish")}
+            </div>
+          </div>
         </div>
-        <button onClick={handleChangeMenu} className={styles.sandwitch}><FiMenu className={styles.icon} /></button>
+        {/* phone screens */}
+        <div className={styles.selectContainer2} onClick={handleChangeLanguageMenu}>
+          <BiWorld />
+          <div className={styles.select1}>
+            {selectedNameLanguage2}
+          </div>
+          {showLanguageMenu? <IoIosArrowUp /> : <IoIosArrowDown />}
+          <div
+            className={showLanguageMenu ? styles.languageMenu : styles.none}
+          >
+            <div
+              onClick={() => handleLanguageChange("en")}
+              className={styles.languageOptions}
+            >
+            En
+            </div>
+            <div
+              onClick={() => handleLanguageChange("es")}
+              className={styles.languageOptions}
+            >
+              Es
+            </div>
+          </div>
+        </div>
+        <button onClick={handleChangeMenu} className={styles.sandwitch}>
+          <FiMenu className={styles.icon} />
+        </button>
         <div className={showMenu ? styles.menu : styles.none}>
-          <div onClick={scrollToContacts}>{t("header.contact")}</div>
+          <div onClick={() => router.push(`${pathname}/#contact`)}>
+            {t("header.contact")}
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default Header;

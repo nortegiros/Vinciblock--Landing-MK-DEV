@@ -13,7 +13,6 @@ const scrollToHeader = () => {
 
 interface DarkButtonProps {
     text: string;
-    onClick: () => void;
   }
   interface BtnsProps {
     title01: string;
@@ -39,9 +38,9 @@ export const ArrowButton2 =()=>{
     )
 }
 
-export const DarkButton: React.FC<DarkButtonProps> = ({ text, onClick }) => {
+export const DarkButton: React.FC<DarkButtonProps> = ({text}) => {
     return (
-      <div className={styles.darkBtn} onClick={onClick}>
+      <div className={styles.darkBtn}>
         <span>{text}</span>
         <div className={styles.arrowContainer}>
           <div className={styles.line}></div>
@@ -51,9 +50,9 @@ export const DarkButton: React.FC<DarkButtonProps> = ({ text, onClick }) => {
     );
   };
 
-  export const LightButton: React.FC<DarkButtonProps> = ({ text, onClick }) => {
+  export const LightButton: React.FC<DarkButtonProps> = ({ text}) => {
     return (
-      <div className={styles.lightBtn} onClick={onClick}>
+      <div className={styles.lightBtn}>
         <span>{text}</span>
         <div className={styles.arrowLightContainer}>
           <div className={styles.lineLight}></div>

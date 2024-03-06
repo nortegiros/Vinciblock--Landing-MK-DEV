@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 10rem;
+  gap: 2rem;
+}
+.getInTouch{
+  width: 100%;
+  height: auto;
+  max-width: 40rem;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.title h2 {
+  margin: 0;
+  color: var(--primary-color);
+  text-align: center;
+  font-family: Sora;
+  font-size: 2.9375rem;
+  font-weight: 600;
+  line-height: 4.20706rem;
+  letter-spacing: 0.04406rem;
+}
+.title p {
+  margin: 0;
+  opacity: 0.7;
+  color: var(--primary-color);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  max-width: 44rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+.shortInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 26.39119rem;
+  height: 2.98513rem;
+  padding: 0.625rem;
+  border: 1px solid #404040;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #545454;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.message {
+  width: 53.75rem;
+  height: 9.07244rem;
+  padding: 0.625rem;
+  border: 1px solid #404040;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #545454;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.input:focus,
+.input:not(:placeholder-shown),
+.message:focus,
+.message:not(:placeholder-shown) {
+  outline: none;
+  color: var(--primary-color);
+  border-color: #F4C656;
+}
+.error {
+  position: absolute;
+  color: rgb(189, 106, 106);
+  font-family: Poppins;
+  font-size: 0.75rem;
+  bottom: -1rem;
+}
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.form button {
+  display: flex;
+  width: 15.78325rem;
+  height: 3.1875rem;
+  padding: 0.625rem 2.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  border: 1px solid #F4C656;
+  background: linear-gradient(260deg, #F4C656 -34.83%, rgba(255, 181, 0, 0.00) 131.34%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form button:hover {
+  background: linear-gradient(260deg, rgba(255, 181, 0, 0.00) -34.83%, #F4C656 131.34%);
+}
+@media(max-width: 1079px) {
+  .container {
+    padding: 5rem 4rem;
+  }
+  .getInTouch{
+    max-width: 31rem;
+  }
+  .title p{
+    max-width: 33.8rem;
+  }
+  .input {
+    width: 19.62344rem;
+    height: 3.12919rem;
+  }
+  
+  .message {
+    width: 39.96644rem;
+    height: 9.51019rem;
+  }
+}
+@media(max-width: 767px) {
+    .container {
+      padding: 5rem 1.21rem;
+    }
+    .shortInput{
+      gap: 0.5rem;
+    }
+    .title p{
+        max-width: 21.6rem;
+    }
+    .input {
+        width: 10rem;
+    }
+    .message {
+        width: 20.5rem;
+        height: 14.26944rem;
+    }
+  }
