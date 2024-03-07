@@ -1,149 +1,153 @@
 {
-    "header":{
-        "solutions": "Solutions",
-        "developers": "Developers",
-        "team": "Team",
-        "company": "Company",
-        "english": "English",
-        "spanish": "Spanish",
-        "contact": "Contact"
+  "header": {
+    "solutions": "Solutions",
+    "developers": "Developers",
+    "team": "Team",
+    "company": "Company",
+    "english": "English",
+    "spanish": "Spanish",
+    "contact": "Contact"
+  },
+  "footer": {
+    "address": "Address: Avenida 0 Calle 11, Centro Comercial Gran Bulevar Local 237. Cúcuta, Colombia.",
+    "home": "Home",
+    "about": "About",
+    "bookings": "Bookings",
+    "blog": "Blog",
+    "legal": "Legal",
+    "terms": "Terms",
+    "privacy": "Policy",
+    "cookies": "Cookies",
+    "products": "Products",
+    "taketour": "TakeTour",
+    "livechat": "Live Chat",
+    "reviews": "Reviews",
+    "newsletter": "Newsletter",
+    "newsletterdesc": "Stay up to date",
+    "yourEmail": "Your email",
+    "subscribe": "Subscribe",
+    "copyrigth": "Copyright 2023. Vinciblock all rights reserved",
+    "services": "Services",
+    "blockchain": "Blockchain",
+    "exchange": "Exchange",
+    "compensation": "Compensation"
+  },
+  "home": {
+    "frontPage": {
+      "title": {
+        "first": "Building",
+        "second": "connections",
+        "third": "to the Digital Future"
+      },
+      "description": "Uniting innovation and technology with a sustainable focus, contributing to societal progress and the well-being of the planet for a more promising digital future.",
+      "placeHolder": "Blockchain",
+      "search": "Search"
     },
-    "footer":{
-        "address":"Address: Avenida 0 Calle 11, Centro Comercial Gran Bulevar Local 237. Cúcuta, Colombia.",
-        "home":"Home",
-        "about":"About",
-        "bookings":"Bookings",
-        "blog":"Blog",
-        "legal":"Legal",
-        "terms":"Terms",
-        "privacy":"Policy",
-        "cookies":"Cookies",
-        "products":"Products",
-        "taketour":"TakeTour",
-        "livechat":"Live Chat",
-        "reviews":"Reviews",
-        "newsletter":"Newsletter",
-        "newsletterdesc":"Stay up to date",
-        "yourEmail":"Your email",
-        "subscribe":"Subscribe",
-        "copyrigth":"Copyright 2023. Vinciblock all rights reserved"
+    "services": {
+      "title": "Services",
+      "augmentedReality": "Augmented Reality",
+      "ai": "Artificial Intelligence",
+      "facialRecognition": "Facial Recognition",
+      "tokenization": "Tokenization",
+      "productDevelopment": "Product Development",
+      "informaticSecurity": "Informatic Security",
+      "exchangeDevelopment": "Exchange Development",
+      "mobileApp": "Mobile Applications",
+      "securityAudits": "Security Audits",
+      "blockchainDevelopment": "Blockchain Development",
+      "products": "Products"
     },
-    "home": {
-        "frontPage": {
-            "title": {
-                "first": "Building",
-                "second": "connections",
-                "third": "to the Digital Future"
-            },
-            "description": "Uniting innovation and technology with a sustainable focus, contributing to societal progress and the well-being of the planet for a more promising digital future.",
-            "placeHolder": "Blockchain",
-            "search": "Search"
-        },
-        "services": {
-            "title": "Services",
-            "augmentedReality": "Augmented Reality",
-            "ai": "Artificial Intelligence",
-            "facialRecognition": "Facial Recognition",
-            "tokenization": "Tokenization",
-            "productDevelopment": "Product Development",
-            "informaticSecurity": "Informatic Security",
-            "exchangeDevelopment": "Exchange Development",
-            "mobileApp": "Mobile Applications",
-            "securityAudits": "Security Audits",
-            "blockchainDevelopment": "Blockchain Development",
-            "products": "Products"
-          },
-        "blockchain":{
-            "title":"Blockchain",
-            "description01":"It is a ledger technology that provides a secure and transparent record of digital transactions. It consists of a chain of encrypted data blocks linked together chronologically, each containing a set of confirmed transactions. What makes a blockchain unique is its decentralized nature and its ability to maintain data integrity without relying on a central authority. This decentralization is achieved through distributed consensus among multiple network nodes, ensuring that there is no single point of failure and that any attempt at manipulation is quickly detected and rejected by the majority of participants.",
-            "description02":"Thanks to these characteristics, blockchains have become the foundation of numerous applications, from cryptocurrencies like Bitcoin to smart contracts and electronic voting systems. Their use is constantly expanding, promoting transparency, security, and trust across a wide variety of industries and use cases.",
-            "button":"Get Started"
-        },
-        "tokenization":{
-            "title":"Tokenization",
-            "description01":"It is the process of converting physical or intangible assets into digital tokens on a blockchain. These tokens digitally represent ownership, participation, or rights to the asset. It allows assets to be divided into smaller parts, facilitating their exchange and transfer in a efficient and secure manner in digital environments. Additionally, backed by blockchain technology, tokens can provide transparency, traceability, and security in transactions, making them ideal for a wide range of applications, such as representing stocks, real estate, artwork, copyrights, among others.",
-            "description02":"Tokenization is being widely explored in different sectors as a way to democratize access to investment and simplify asset trading and management processes.",
-            "button":"Get Started"
-        },
-        "exchange":{
-            "title":"Exchange",
-            "description01":"It is an online platform that facilitates the exchange of digital assets, such as cryptocurrencies, tokens, and other digital assets. It operates as a market where users can buy, sell, or exchange these assets with each other. They provide interfaces that allow users to make transactions, set prices, and track their assets.",
-            "description02":"These platforms, when decentralized, operate directly on the blockchain and allow users to trade peer-to-peer, without the need for an intermediary. Exchanges play a fundamental role in the cryptocurrency and digital asset ecosystem, providing liquidity and a point of access for the acquisition and trading of these assets.",
-            "button":"Get Started"
-        },
-        "artificialIntelligence":{
-            "title":"Artificial Intelligence",
-            "description01":"It focuses on the development of systems and programs capable of performing tasks that normally require human intelligence. These systems can learn, reason, recognize patterns, make decisions, and solve problems autonomously, adapting and improving their performance as they interact with the environment and receive feedback.",
-            "description02":"AI is based on algorithms and mathematical models designed to simulate human thinking and decision-making. These algorithms can use techniques such as machine learning, natural language processing, computer vision, and robotics, among others, to perform a wide range of tasks and applications. It is present in numerous aspects of daily life, from search engines on the internet and recommendation systems on streaming platforms, to virtual assistants on mobile devices and autonomous driving systems in vehicles.",
-            "button":"Get Started"
-        },
-        "augmentedReality":{
-            "title":"Augmented Reality",
-            "description01":"Augmented reality (AR) is a technology that combines elements of the real world with computer-generated virtual elements, allowing users to interact with this combination in real-time through devices such as smartphones, tablets, or smart glasses. It works by overlaying relevant digital information, such as graphics, images, or data, onto real-world objects, thus enriching the user experience.",
-            "description02":"It has applications in various fields, from entertainment and video games to education, medicine, design, and more, offering new ways of interaction and improving various human experiences.",
-            "button":"Get Started"
-        },
-        "facialRecognition":{
-            "title":"Facial Recognition",
-            "description01":"It is an advanced technology that uses artificial intelligence algorithms to analyze and recognize unique facial features, such as the shape of the face, eyes, nose, and mouth. This process occurs in three stages: first, face detection identifies the presence and location in an image or video; then, specific facial features are extracted from each detected face; finally, this facial pattern is compared to a database to identify or verify the person.",
-            "description02":"It is used in various applications, such as security and surveillance systems, unlocking mobile devices, access control to buildings or computer systems, identifying people in photos or videos, and managing identities in government or business contexts.",
-            "button":"Get Started"
-        },
-        "productDevelopment":{
-            "title":"Product Development",
-            "description01":"We create and design computer applications, programs, or software systems that meet the specific needs or requirements of users or clients. These products can vary in complexity and functionality, from enterprise management software to artificial intelligence systems and e-commerce platforms. Product software development involves a series of stages ranging from conception and initial design to implementation, testing, launch, and continuous maintenance.",
-            "description02":"This process requires the collaboration of various professionals, such as software developers, user interface designers, quality engineers, cybersecurity specialists, and project managers. The main goal is to create effective and efficient technological solutions that add value to users or clients, whether by improving productivity, optimizing processes, facilitating communication, or providing new business opportunities.",
-            "button":"Get Started"
-        },
-        "products":{
-            "title":"Products",
-            "description01":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-            "description02":"dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-            "button":"Get Started"
-        },
-        "mobileApps":{
-            "title":"Mobile Application Development",
-            "description01":"We develop software for mobile devices, such as smartphones and tablets. It can be divided into two main approaches: native development and cross-platform development. Native development involves creating applications specific to a particular platform, using languages and tools recommended by the operating system manufacturer, such as Swift for iOS and Java or Kotlin for Android. On the other hand, cross-platform development allows creating applications that work on multiple operating systems, using a single set of base code, with tools such as React Native, Flutter, or Xamarin.",
-            "description02":"The development process includes planning, design, implementation, testing, and deployment of the application in the corresponding app stores. This development is essential due to the growing dependence of users on their mobile devices for various tasks, from accessing information to making purchases. Companies also leverage mobile applications as a way to reach their customers, improve the user experience, and generate additional revenue.",
-            "button":"Get Started"
-        },
-        "informaticSecurity":{
-            "title":"Information Security",
-            "description01":"Refers to the protection of computer systems, networks, devices, and data against attacks, unauthorized access, damage, or any other threat that may compromise their integrity, confidentiality, and availability. This field encompasses a variety of measures and techniques designed to prevent, detect, and respond to cyber threats. It involves the implementation of policies, procedures, controls, and technological tools to protect information and digital resources.",
-            "description02":"Some of the key areas of information security include user authentication, access management, data encryption, protection against malware, network monitoring, incident response, and security education for users.",
-            "button":"Get Started"
-        },
-        "testModules":{
-            "title":"Test Modules",
-            "description01":"They are components of the software development process used to verify and validate the proper functioning of an application or system. These modules are designed to test different aspects of the software, such as its functionality, performance, security, and usability. They specify a series of actions to be performed in the application under test, as well as the expected results to be obtained. They may include detailed steps to reproduce certain usage scenarios, specific input data, test conditions, and acceptance criteria. Additionally, they can be automated using testing tools to execute tests efficiently and repeatably.",
-            "description02":"They are essential to ensure the quality of the software and detect potential defects or issues before the product is released to the market. They help identify errors at an early stage of the development cycle, allowing different teams to correct them in a timely manner and avoid costly mistakes in later stages.",
-            "button":"Get Started"
-        },
-        "securityAudits":{
-            "title":"Security Audits",
-            "description01":"They are procedures designed to identify and address potential security risks in the organization's systems, applications, and data. During these audits, various aspects related to security are analyzed, such as vulnerabilities in application code, system and network security configuration, and access and privilege management.",
-            "description02":"Penetration tests are conducted to assess the resilience of systems against potential attacks, and compliance with applicable security regulations and standards is verified. At the end of the audit, recommendations and corrective actions are provided to improve the security posture of the company.",
-            "button":"Get Started"
-        },
-        "startNow":"Start your project now!",
-        "startButton":"Get Started",
-        "contact":{
-            "title":"Get in Touch",
-            "description01":"We are here to help you. Fill out the form and we will contact you as soon as possible to answer your questions or address your needs.",
-            "name":"Name",
-            "lastName":"Last Name",
-            "email":"Email",
-            "phone":"Phone",
-            "message":"Message",
-            "button":"Send",
-            "errors":{
-                "name":"Name is required",
-                "lastName":"Last name is required",
-                "email1":"Email is required",
-                "email2":"Invalid email",
-                "phone":"Phone is required",
-                "message":"Message is required"
-            }
-        }
+    "blockchain": {
+      "title": "Blockchain",
+      "description01": "It is a ledger technology that provides a secure and transparent record of digital transactions. It consists of a chain of encrypted data blocks linked together chronologically, each containing a set of confirmed transactions. What makes a blockchain unique is its decentralized nature and its ability to maintain data integrity without relying on a central authority. This decentralization is achieved through distributed consensus among multiple network nodes, ensuring that there is no single point of failure and that any attempt at manipulation is quickly detected and rejected by the majority of participants.",
+      "description02": "Thanks to these characteristics, blockchains have become the foundation of numerous applications, from cryptocurrencies like Bitcoin to smart contracts and electronic voting systems. Their use is constantly expanding, promoting transparency, security, and trust across a wide variety of industries and use cases.",
+      "button": "Get Started"
+    },
+    "tokenization": {
+      "title": "Tokenization",
+      "description01": "It is the process of converting physical or intangible assets into digital tokens on a blockchain. These tokens digitally represent ownership, participation, or rights to the asset. It allows assets to be divided into smaller parts, facilitating their exchange and transfer in a efficient and secure manner in digital environments. Additionally, backed by blockchain technology, tokens can provide transparency, traceability, and security in transactions, making them ideal for a wide range of applications, such as representing stocks, real estate, artwork, copyrights, among others.",
+      "description02": "Tokenization is being widely explored in different sectors as a way to democratize access to investment and simplify asset trading and management processes.",
+      "button": "Get Started"
+    },
+    "exchange": {
+      "title": "Exchange",
+      "description01": "It is an online platform that facilitates the exchange of digital assets, such as cryptocurrencies, tokens, and other digital assets. It operates as a market where users can buy, sell, or exchange these assets with each other. They provide interfaces that allow users to make transactions, set prices, and track their assets.",
+      "description02": "These platforms, when decentralized, operate directly on the blockchain and allow users to trade peer-to-peer, without the need for an intermediary. Exchanges play a fundamental role in the cryptocurrency and digital asset ecosystem, providing liquidity and a point of access for the acquisition and trading of these assets.",
+      "button": "Get Started"
+    },
+    "artificialIntelligence": {
+      "title": "Artificial Intelligence",
+      "description01": "It focuses on the development of systems and programs capable of performing tasks that normally require human intelligence. These systems can learn, reason, recognize patterns, make decisions, and solve problems autonomously, adapting and improving their performance as they interact with the environment and receive feedback.",
+      "description02": "AI is based on algorithms and mathematical models designed to simulate human thinking and decision-making. These algorithms can use techniques such as machine learning, natural language processing, computer vision, and robotics, among others, to perform a wide range of tasks and applications. It is present in numerous aspects of daily life, from search engines on the internet and recommendation systems on streaming platforms, to virtual assistants on mobile devices and autonomous driving systems in vehicles.",
+      "button": "Get Started"
+    },
+    "augmentedReality": {
+      "title": "Augmented Reality",
+      "description01": "Augmented reality (AR) is a technology that combines elements of the real world with computer-generated virtual elements, allowing users to interact with this combination in real-time through devices such as smartphones, tablets, or smart glasses. It works by overlaying relevant digital information, such as graphics, images, or data, onto real-world objects, thus enriching the user experience.",
+      "description02": "It has applications in various fields, from entertainment and video games to education, medicine, design, and more, offering new ways of interaction and improving various human experiences.",
+      "button": "Get Started"
+    },
+    "facialRecognition": {
+      "title": "Facial Recognition",
+      "description01": "It is an advanced technology that uses artificial intelligence algorithms to analyze and recognize unique facial features, such as the shape of the face, eyes, nose, and mouth. This process occurs in three stages: first, face detection identifies the presence and location in an image or video; then, specific facial features are extracted from each detected face; finally, this facial pattern is compared to a database to identify or verify the person.",
+      "description02": "It is used in various applications, such as security and surveillance systems, unlocking mobile devices, access control to buildings or computer systems, identifying people in photos or videos, and managing identities in government or business contexts.",
+      "button": "Get Started"
+    },
+    "productDevelopment": {
+      "title": "Product Development",
+      "description01": "We create and design computer applications, programs, or software systems that meet the specific needs or requirements of users or clients. These products can vary in complexity and functionality, from enterprise management software to artificial intelligence systems and e-commerce platforms. Product software development involves a series of stages ranging from conception and initial design to implementation, testing, launch, and continuous maintenance.",
+      "description02": "This process requires the collaboration of various professionals, such as software developers, user interface designers, quality engineers, cybersecurity specialists, and project managers. The main goal is to create effective and efficient technological solutions that add value to users or clients, whether by improving productivity, optimizing processes, facilitating communication, or providing new business opportunities.",
+      "button": "Get Started"
+    },
+    "products": {
+      "title": "Products",
+      "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
+      "description02": "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
+      "button": "Get Started"
+    },
+    "mobileApps": {
+      "title": "Mobile Application Development",
+      "description01": "We develop software for mobile devices, such as smartphones and tablets. It can be divided into two main approaches: native development and cross-platform development. Native development involves creating applications specific to a particular platform, using languages and tools recommended by the operating system manufacturer, such as Swift for iOS and Java or Kotlin for Android. On the other hand, cross-platform development allows creating applications that work on multiple operating systems, using a single set of base code, with tools such as React Native, Flutter, or Xamarin.",
+      "description02": "The development process includes planning, design, implementation, testing, and deployment of the application in the corresponding app stores. This development is essential due to the growing dependence of users on their mobile devices for various tasks, from accessing information to making purchases. Companies also leverage mobile applications as a way to reach their customers, improve the user experience, and generate additional revenue.",
+      "button": "Get Started"
+    },
+    "informaticSecurity": {
+      "title": "Information Security",
+      "description01": "Refers to the protection of computer systems, networks, devices, and data against attacks, unauthorized access, damage, or any other threat that may compromise their integrity, confidentiality, and availability. This field encompasses a variety of measures and techniques designed to prevent, detect, and respond to cyber threats. It involves the implementation of policies, procedures, controls, and technological tools to protect information and digital resources.",
+      "description02": "Some of the key areas of information security include user authentication, access management, data encryption, protection against malware, network monitoring, incident response, and security education for users.",
+      "button": "Get Started"
+    },
+    "testModules": {
+      "title": "Test Modules",
+      "description01": "They are components of the software development process used to verify and validate the proper functioning of an application or system. These modules are designed to test different aspects of the software, such as its functionality, performance, security, and usability. They specify a series of actions to be performed in the application under test, as well as the expected results to be obtained. They may include detailed steps to reproduce certain usage scenarios, specific input data, test conditions, and acceptance criteria. Additionally, they can be automated using testing tools to execute tests efficiently and repeatably.",
+      "description02": "They are essential to ensure the quality of the software and detect potential defects or issues before the product is released to the market. They help identify errors at an early stage of the development cycle, allowing different teams to correct them in a timely manner and avoid costly mistakes in later stages.",
+      "button": "Get Started"
+    },
+    "securityAudits": {
+      "title": "Security Audits",
+      "description01": "They are procedures designed to identify and address potential security risks in the organization's systems, applications, and data. During these audits, various aspects related to security are analyzed, such as vulnerabilities in application code, system and network security configuration, and access and privilege management.",
+      "description02": "Penetration tests are conducted to assess the resilience of systems against potential attacks, and compliance with applicable security regulations and standards is verified. At the end of the audit, recommendations and corrective actions are provided to improve the security posture of the company.",
+      "button": "Get Started"
+    },
+    "startNow": "Start your project now!",
+    "startButton": "Get Started",
+    "contact": {
+      "title": "Get in Touch",
+      "description01": "We are here to help you. Fill out the form and we will contact you as soon as possible to answer your questions or address your needs.",
+      "name": "Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "button": "Send",
+      "errors": {
+        "name": "Name is required",
+        "lastName": "Last name is required",
+        "email1": "Email is required",
+        "email2": "Invalid email",
+        "phone": "Phone is required",
+        "message": "Message is required"
+      }
     }
+  }
 }

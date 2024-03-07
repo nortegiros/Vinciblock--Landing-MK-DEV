@@ -13,13 +13,10 @@
 .headerTitle{
     cursor: pointer;
 }
-.headerTitle a{
-    margin: 0;
-    color: var(--primary-color);
-    font-family: DMSans;
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.525rem;
+.headerTitle img{
+    margin-left: -10px;
+    width: 220px;
+    height: auto;
 }
 .headerContent2{
     display: none;
@@ -206,6 +203,9 @@
     .headerTitle a{
         font-size: 1.1rem;
         letter-spacing: 0.5rem;
+    }
+    .headerTitle img{
+        width: 180px;
     }
     .selectContainer{
         display: none;

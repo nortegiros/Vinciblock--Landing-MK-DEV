@@ -7,6 +7,8 @@ import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import logo from '../../../public/assents/images/light-logo-VinciBlock.png';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -59,7 +61,9 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.headerTitle}>
-        <Link href="/">VINCIBLOCK</Link>
+        <Link href="/">
+          <Image src={logo} alt="VinciBlockLogo"/>
+        </Link>
       </div>
 
       {/* big screens */}

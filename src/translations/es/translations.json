@@ -1,149 +1,153 @@
 {
-    "header": {
-        "solutions": "Soluciones",
-        "developers": "Desarrolladores",
-        "team": "Equipo",
-        "company": "Empresa",
-        "english": "Inglés",
-        "spanish": "Español",
-        "contact": "Contacto"
+  "header": {
+    "solutions": "Soluciones",
+    "developers": "Desarrolladores",
+    "team": "Equipo",
+    "company": "Empresa",
+    "english": "Inglés",
+    "spanish": "Español",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "address": "Dirección: Avenida 0 Calle 11, Centro Comercial Gran Bulevar Local 237. Cúcuta, Colombia.",
+    "home": "Inicio",
+    "about": "Acerca",
+    "bookings": "Reservas",
+    "blog": "Blog",
+    "legal": "Legal",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "cookies": "Cookies",
+    "products": "Productos",
+    "taketour": "Recorrido",
+    "livechat": "Chat en vivo",
+    "reviews": "Reseñas",
+    "newsletter": "Boletín",
+    "newsletterdesc": "Mantente actualizado",
+    "yourEmail": "Tu email",
+    "subscribe": "Suscribirse",
+    "copyrigth": "Copyright 2023. Vinciblock todos los derechos reservados",
+    "services": "Servicios",
+    "blockchain": "Blockchain",
+    "exchange": "Exchange",
+    "compensation": "Indemnización"
+  },
+  "home": {
+    "frontPage": {
+      "title": {
+        "first": "Construyendo",
+        "second": "conexiones",
+        "third": "hacia el Futuro Digital"
+      },
+      "description": "Uniendo innovación y tecnología con un enfoque sostenible, contribuyendo al progreso de la sociedad y al bienestar del planeta para in futuro digital más prometedor.",
+      "placeHolder": "Blockchain",
+      "search": "Buscar"
     },
-    "footer": {
-        "address": "Dirección: Avenida 0 Calle 11, Centro Comercial Gran Bulevar Local 237. Cúcuta, Colombia.",
-        "home": "Inicio",
-        "about": "Acerca",
-        "bookings": "Reservas",
-        "blog": "Blog",
-        "legal": "Legal",
-        "terms": "Términos",
-        "privacy": "Privacidad",
-        "cookies": "Cookies",
-        "products": "Productos",
-        "taketour": "Recorrido",
-        "livechat": "Chat en vivo",
-        "reviews": "Reseñas",
-        "newsletter": "Boletín",
-        "newsletterdesc": "Mantente actualizado",
-        "yourEmail": "Tu email",
-        "subscribe": "Suscribirse",
-        "copyrigth": "Copyright 2023. Vinciblock todos los derechos reservados"
+    "services": {
+      "title": "Servicios",
+      "augmentedReality": "Realidad Aumentada",
+      "ai": "Inteligencia Artificial",
+      "facialRecognition": "Reconocimiento Facial",
+      "tokenization": "Tokenización",
+      "productDevelopment": "Desarrollo de Producto",
+      "informaticSecurity": "Seguridad Informática",
+      "exchangeDevelopment": "Desarrollo de Exchange",
+      "mobileApp": "Aplicaciones Móviles",
+      "securityAudits": "Auditorías de Seguridad",
+      "blockchainDevelopment": "Desarrollo de Blockchain",
+      "products": "Productos"
     },
-    "home": {
-        "frontPage": {
-            "title": {
-                "first": "Construyendo",
-                "second": "conexiones",
-                "third": "hacia el Futuro Digital"
-            },
-            "description": "Uniendo innovación y tecnología con un enfoque sostenible, contribuyendo al progreso de la sociedad y al bienestar del planeta para in futuro digital más prometedor.",
-            "placeHolder": "Blockchain",
-            "search": "Buscar"
-        },
-        "services": {
-            "title": "Servicios",
-            "augmentedReality": "Realidad Aumentada",
-            "ai": "Inteligencia Artificial",
-            "facialRecognition": "Reconocimiento Facial",
-            "tokenization": "Tokenización",
-            "productDevelopment": "Desarrollo de Producto",
-            "informaticSecurity": "Seguridad Informática",
-            "exchangeDevelopment": "Desarrollo de Exchange",
-            "mobileApp": "Aplicaciones Móviles",
-            "securityAudits": "Auditorías de Seguridad",
-            "blockchainDevelopment": "Desarrollo de Blockchain",
-            "products": "Productos"
-          },
-        "blockchain":{
-            "title":"Blockchain",
-            "description01":"Es una tecnología de contabilidad que proporciona un registro seguro y transparente de transacciones digitales. Está compuesta por una cadena de bloques de datos encriptados y vinculados entre sí de forma cronológica, en los que cada uno de ellos contiene un conjunto de transacciones confirmadas. Lo que hace única a una blockchain es su naturaleza descentralizada y su capacidad para mantener la integridad de los datos sin depender de una autoridad central. Esta descentralización se logra mediante un consenso distribuido entre múltiples nodos de la red, lo que garantiza que no haya un solo punto de falla y que cualquier intento de manipulación sea rápidamente detectado y rechazado por la mayoría de los participantes. ",
-            "description02":"Gracias a estas características, las blockchains se han convertido en la base de numerosas aplicaciones, desde criptomonedas como Bitcoin hasta contratos inteligentes y sistemas de votación electrónica. Su uso está en constante expansión, promoviendo la transparencia, la seguridad y la confianza en una amplia variedad de sectores industriales y casos de uso.",
-            "button":"Iniciar Ahora"
-        },
-        "tokenization":{
-            "title":"Tokenización",
-            "description01":"Es el proceso de convertir activos físicos o intangibles en tokens digitales en una blockchain. Estos tokens representan de manera digital la propiedad, participación o derechos sobre el activo. Permite la división de activos en partes más pequeñas, lo que facilita su intercambio y transferencia de una manera eficiente y segura en entornos digitales. Además, al estar respaldados por la tecnología blockchain, los tokens pueden proporcionar transparencia, trazabilidad y seguridad en las transacciones, lo que los hace ideales para una amplia gama de aplicaciones, como la representación de acciones, bienes raíces, obras de arte, derechos de autor, entre otros.",
-            "description02":"La tokenización está siendo ampliamente explorada en diferentes sectores como una forma de democratizar el acceso a la inversión y simplificar los procesos de negociación y gestión de activos.",
-            "button":"Iniciar Ahora"
-        },
-        "exchange":{
-            "title":"Exchange",
-            "description01":"Es una plataforma en línea que facilita el intercambio de activos digitales, como criptomonedas, tokens y otros activos digitales. Funciona como un mercado donde los usuarios pueden comprar, vender o intercambiar estos activos entre sí. Proporcionan interfaces que permiten a los usuarios realizar transacciones, establecer precios y realizar seguimiento de sus activos.",
-            "description02":"Estas plataformas, cuando son descentralizadas, operan directamente en la blockchain y permiten a los usuarios comerciar de forma peer-to-peer, sin la necesidad de un intermediario. Las exchanges desempeñan un papel fundamental en el ecosistema de las criptomonedas y activos digitales, proporcionando liquidez y un punto de acceso para la adquisición y negociación de estos activos.",
-            "button":"Iniciar Ahora"
-        },
-        "artificialIntelligence":{
-            "title":"Inteligencia Artificial",
-            "description01":"Se centra en el desarrollo de sistemas y programas capaces de realizar tareas que normalmente requieren inteligencia humana. Estos sistemas pueden aprender, razonar, reconocer patrones, tomar decisiones, y resolver problemas de manera autónoma, adaptándose y mejorando su desempeño a medida que interactúan con el entorno y reciben retroalimentación.",
-            "description02":"La IA se basa en algoritmos y modelos matemáticos diseñados para simular el pensamiento humano y la toma de decisiones. Estos algoritmos pueden utilizar técnicas como el aprendizaje automático, el procesamiento del lenguaje natural, la visión por computadora y la robótica, entre otros, para realizar una amplia gama de tareas y aplicaciones. Se encuentra presente en numerosos aspectos de la vida cotidiana, desde los motores de búsqueda en internet y los sistemas de recomendación en plataformas de streaming, hasta los asistentes virtuales en dispositivos móviles y los sistemas de conducción autónoma en vehículos.",
-            "button":"Iniciar Ahora"
-        },
-        "augmentedReality":{
-            "title":"Realidad Aumentada",
-            "description01":"La realidad aumentada (RA) es una tecnología que combina elementos del mundo real con elementos virtuales generados por computadora, permitiendo a los usuarios interactuar con esta combinación en tiempo real a través de dispositivos como teléfonos, tablets o gafas inteligentes. Funciona superponiendo información digital relevante, como gráficos, imágenes o datos, sobre objetos del mundo real, enriqueciendo así la experiencia del usuario.",
-            "description02":"Tiene aplicaciones en diversos campos, desde entretenimiento y videojuegos hasta educación, medicina, diseño y más, ofreciendo nuevas formas de interacción y mejorando diversas experiencias humanas.",
-            "button":"Iniciar Ahora"
-        },
-        "facialRecognition":{
-            "title":"Reconocimiento Facial",
-            "description01":"Es una tecnología avanzada que utiliza algoritmos de inteligencia artificial para analizar y reconocer características faciales únicas, como la forma de la cara, los ojos, la nariz y la boca. Este proceso se realiza en tres etapas: primero, la detección de rostros identifica la presencia y ubicación en una imagen o video; luego, se extraen características faciales específicas de cada cara detectada; finalmente, se compara este patrón facial con una base de datos para identificar o verificar la persona.",
-            "description02":"Se emplea en diversas aplicaciones, como sistemas de seguridad y vigilancia, desbloqueo de dispositivos móviles, control de acceso a edificios o sistemas informáticos, identificación de personas en fotos o videos, y gestión de identidades en contextos gubernamentales o empresariales.",
-            "button":"Iniciar Ahora"
-        },
-        "productDevelopment":{
-            "title":"Desarrollo de Producto",
-            "description01":"Creamos y diseñamos aplicaciones informáticas, programas o sistemas de software que satisfacen las necesidades o requerimientos específicos de los usuarios o clientes. Estos productos pueden variar en complejidad y funcionalidad, desde software de gestión empresarial hasta sistemas de inteligencia artificial y plataformas de comercio electrónico. El desarrollo de productos de software implica una serie de etapas que van desde la concepción y el diseño inicial, hasta la implementación, pruebas, lanzamiento y mantenimiento continuo.",
-            "description02":"Este proceso requiere la colaboración de diversos profesionales, como desarrolladores de software, diseñadores de interfaces de usuario, ingenieros de calidad, especialistas en seguridad informática y gerentes de proyecto. El objetivo principal es crear soluciones tecnológicas efectivas y eficientes que agreguen valor a los usuarios o clientes, ya sea mejorando la productividad, optimizando procesos, facilitando la comunicación o proporcionando nuevas oportunidades de negocio.",
-            "button":"Iniciar Ahora"
-        },
-        "products":{
-            "title":"Productos",
-            "description01":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-            "description02":"dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
-            "button":"Iniciar Ahora"
-        },
-        "mobileApps":{
-            "title":"Desarrollo de Aplicaciones Móviles",
-            "description01":"Desarrollamos software para los dispositivos móviles, como teléfonos inteligentes y tabletas. Puede dividirse en dos enfoques principales: desarrollo nativo y desarrollo multiplataforma. El desarrollo nativo implica la creación de aplicaciones específicas para una plataforma en particular, utilizando los lenguajes y herramientas recomendadas por el fabricante del sistema operativo, como Swift para iOS y Java o Kotlin para Android. Por otro lado, el desarrollo multiplataforma permite crear aplicaciones que funcionen en múltiples sistemas operativos, utilizando un solo conjunto de código base, con herramientas como React Native, Flutter o Xamarin.",
-            "description02":"El proceso de desarrollo incluye la planificación, diseño, implementación, pruebas y despliegue de la aplicación en las tiendas de aplicaciones correspondientes. Este desarrollo es esencial debido a la creciente dependencia de los usuarios en sus dispositivos móviles para diversas tareas, desde acceder a información hasta realizar compras. Las empresas también aprovechan las aplicaciones móviles como una forma de llegar a sus clientes, mejorar la experiencia del usuario y generar ingresos adicionales.",
-            "button":"Iniciar Ahora"
-        },
-        "informaticSecurity":{
-            "title":"Seguridad Informática",
-            "description01":"Se refiere a la protección de sistemas informáticos, redes, dispositivos y datos contra ataques, accesos no autorizados, daños o cualquier otra amenaza que pueda comprometer su integridad, confidencialidad y disponibilidad. Este campo abarca una variedad de medidas y técnicas diseñadas para prevenir, detectar y responder a las amenazas cibernéticas. Involucra la implementación de políticas, procedimientos, controles y herramientas tecnológicas para proteger la información y los recursos digitales.",
-            "description02":"Algunas de las áreas clave de la seguridad informática incluyen la autenticación de usuarios, la gestión de accesos, la encriptación de datos, la protección contra malware, el monitoreo de redes, la respuesta a incidentes y la educación sobre seguridad para los usuarios.",
-            "button":"Iniciar Ahora"
-        },
-        "testModules":{
-            "title":"Módulos de Prueba",
-            "description01":"Son componentes del proceso de desarrollo de software que se utilizan para verificar y validar el correcto funcionamiento de una aplicación o sistema. Estos módulos están diseñados para probar diferentes aspectos del software, como su funcionalidad, rendimiento, seguridad y usabilidad. Especifican una serie de acciones que deben ejecutarse en la aplicación bajo prueba, así como los resultados esperados que se deben obtener. Pueden incluir pasos detallados para reproducir ciertos escenarios de uso, datos de entrada específicos, condiciones de prueba y criterios de aceptación. Además, pueden automatizarse mediante herramientas de prueba para ejecutar pruebas de manera eficiente y repetible.",
-            "description02":"Son esenciales para garantizar la calidad del software y detectar posibles defectos o problemas antes de que el producto se lance al mercado. Ayudan a identificar errores en una etapa temprana del ciclo de desarrollo, lo que permite a los distintos equipos de trabajo corregirlos de manera oportuna y evitar costosos errores en etapas posteriores.",
-            "button":"Iniciar Ahora"
-        },
-        "securityAudits":{
-            "title":"Auditorías de Seguridad",
-            "description01":"Son procedimientos diseñados para identificar y abordar posibles riesgos de seguridad en los sistemas, aplicaciones y datos de la organización. Durante estas auditorías, se analizan diversos aspectos relacionados con la seguridad, como las vulnerabilidades en el código de las aplicaciones, la configuración de seguridad de los sistemas y redes, y la gestión de accesos y privilegios. ",
-            "description02":"Se llevan a cabo pruebas de penetración para evaluar la resistencia de los sistemas frente a posibles ataques, y se verifica el cumplimiento de las regulaciones y estándares de seguridad aplicables. Al finalizar la auditoría, se proporcionan recomendaciones y acciones correctivas para mejorar la postura de seguridad de la empresa.",
-            "button":"Iniciar Ahora"
-        },
-        "startNow":"¡Inicia tu proyecto ahora!",
-        "startButton":"Iniciar Ahora",
-        "contact":{
-            "title":"Ponte en contacto",
-            "description01":"Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible para responder tus preguntas o atender tus necesidades.",
-            "name":"Nombre",
-            "lastName":"Apellido",
-            "email":"Email",
-            "phone":"Teléfono",
-            "message":"Mensaje",
-            "button":"Enviar",
-            "errors":{
-                "name":"El nombre es obligatorio",
-                "lastName":"El apellido es obligatorio",
-                "email1":"El correo electrónico es obligatorio",
-                "email2":"Correo electrónico inválido",
-                "phone":"El teléfono es obligatorio",
-                "message":"El mensaje es obligatorio"
-            }
-        }
+    "blockchain": {
+      "title": "Blockchain",
+      "description01": "Es una tecnología de contabilidad que proporciona un registro seguro y transparente de transacciones digitales. Está compuesta por una cadena de bloques de datos encriptados y vinculados entre sí de forma cronológica, en los que cada uno de ellos contiene un conjunto de transacciones confirmadas. Lo que hace única a una blockchain es su naturaleza descentralizada y su capacidad para mantener la integridad de los datos sin depender de una autoridad central. Esta descentralización se logra mediante un consenso distribuido entre múltiples nodos de la red, lo que garantiza que no haya un solo punto de falla y que cualquier intento de manipulación sea rápidamente detectado y rechazado por la mayoría de los participantes. ",
+      "description02": "Gracias a estas características, las blockchains se han convertido en la base de numerosas aplicaciones, desde criptomonedas como Bitcoin hasta contratos inteligentes y sistemas de votación electrónica. Su uso está en constante expansión, promoviendo la transparencia, la seguridad y la confianza en una amplia variedad de sectores industriales y casos de uso.",
+      "button": "Iniciar Ahora"
+    },
+    "tokenization": {
+      "title": "Tokenización",
+      "description01": "Es el proceso de convertir activos físicos o intangibles en tokens digitales en una blockchain. Estos tokens representan de manera digital la propiedad, participación o derechos sobre el activo. Permite la división de activos en partes más pequeñas, lo que facilita su intercambio y transferencia de una manera eficiente y segura en entornos digitales. Además, al estar respaldados por la tecnología blockchain, los tokens pueden proporcionar transparencia, trazabilidad y seguridad en las transacciones, lo que los hace ideales para una amplia gama de aplicaciones, como la representación de acciones, bienes raíces, obras de arte, derechos de autor, entre otros.",
+      "description02": "La tokenización está siendo ampliamente explorada en diferentes sectores como una forma de democratizar el acceso a la inversión y simplificar los procesos de negociación y gestión de activos.",
+      "button": "Iniciar Ahora"
+    },
+    "exchange": {
+      "title": "Exchange",
+      "description01": "Es una plataforma en línea que facilita el intercambio de activos digitales, como criptomonedas, tokens y otros activos digitales. Funciona como un mercado donde los usuarios pueden comprar, vender o intercambiar estos activos entre sí. Proporcionan interfaces que permiten a los usuarios realizar transacciones, establecer precios y realizar seguimiento de sus activos.",
+      "description02": "Estas plataformas, cuando son descentralizadas, operan directamente en la blockchain y permiten a los usuarios comerciar de forma peer-to-peer, sin la necesidad de un intermediario. Las exchanges desempeñan un papel fundamental en el ecosistema de las criptomonedas y activos digitales, proporcionando liquidez y un punto de acceso para la adquisición y negociación de estos activos.",
+      "button": "Iniciar Ahora"
+    },
+    "artificialIntelligence": {
+      "title": "Inteligencia Artificial",
+      "description01": "Se centra en el desarrollo de sistemas y programas capaces de realizar tareas que normalmente requieren inteligencia humana. Estos sistemas pueden aprender, razonar, reconocer patrones, tomar decisiones, y resolver problemas de manera autónoma, adaptándose y mejorando su desempeño a medida que interactúan con el entorno y reciben retroalimentación.",
+      "description02": "La IA se basa en algoritmos y modelos matemáticos diseñados para simular el pensamiento humano y la toma de decisiones. Estos algoritmos pueden utilizar técnicas como el aprendizaje automático, el procesamiento del lenguaje natural, la visión por computadora y la robótica, entre otros, para realizar una amplia gama de tareas y aplicaciones. Se encuentra presente en numerosos aspectos de la vida cotidiana, desde los motores de búsqueda en internet y los sistemas de recomendación en plataformas de streaming, hasta los asistentes virtuales en dispositivos móviles y los sistemas de conducción autónoma en vehículos.",
+      "button": "Iniciar Ahora"
+    },
+    "augmentedReality": {
+      "title": "Realidad Aumentada",
+      "description01": "La realidad aumentada (RA) es una tecnología que combina elementos del mundo real con elementos virtuales generados por computadora, permitiendo a los usuarios interactuar con esta combinación en tiempo real a través de dispositivos como teléfonos, tablets o gafas inteligentes. Funciona superponiendo información digital relevante, como gráficos, imágenes o datos, sobre objetos del mundo real, enriqueciendo así la experiencia del usuario.",
+      "description02": "Tiene aplicaciones en diversos campos, desde entretenimiento y videojuegos hasta educación, medicina, diseño y más, ofreciendo nuevas formas de interacción y mejorando diversas experiencias humanas.",
+      "button": "Iniciar Ahora"
+    },
+    "facialRecognition": {
+      "title": "Reconocimiento Facial",
+      "description01": "Es una tecnología avanzada que utiliza algoritmos de inteligencia artificial para analizar y reconocer características faciales únicas, como la forma de la cara, los ojos, la nariz y la boca. Este proceso se realiza en tres etapas: primero, la detección de rostros identifica la presencia y ubicación en una imagen o video; luego, se extraen características faciales específicas de cada cara detectada; finalmente, se compara este patrón facial con una base de datos para identificar o verificar la persona.",
+      "description02": "Se emplea en diversas aplicaciones, como sistemas de seguridad y vigilancia, desbloqueo de dispositivos móviles, control de acceso a edificios o sistemas informáticos, identificación de personas en fotos o videos, y gestión de identidades en contextos gubernamentales o empresariales.",
+      "button": "Iniciar Ahora"
+    },
+    "productDevelopment": {
+      "title": "Desarrollo de Producto",
+      "description01": "Creamos y diseñamos aplicaciones informáticas, programas o sistemas de software que satisfacen las necesidades o requerimientos específicos de los usuarios o clientes. Estos productos pueden variar en complejidad y funcionalidad, desde software de gestión empresarial hasta sistemas de inteligencia artificial y plataformas de comercio electrónico. El desarrollo de productos de software implica una serie de etapas que van desde la concepción y el diseño inicial, hasta la implementación, pruebas, lanzamiento y mantenimiento continuo.",
+      "description02": "Este proceso requiere la colaboración de diversos profesionales, como desarrolladores de software, diseñadores de interfaces de usuario, ingenieros de calidad, especialistas en seguridad informática y gerentes de proyecto. El objetivo principal es crear soluciones tecnológicas efectivas y eficientes que agreguen valor a los usuarios o clientes, ya sea mejorando la productividad, optimizando procesos, facilitando la comunicación o proporcionando nuevas oportunidades de negocio.",
+      "button": "Iniciar Ahora"
+    },
+    "products": {
+      "title": "Productos",
+      "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
+      "description02": "dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu. Lorem ipsum.",
+      "button": "Iniciar Ahora"
+    },
+    "mobileApps": {
+      "title": "Desarrollo de Aplicaciones Móviles",
+      "description01": "Desarrollamos software para los dispositivos móviles, como teléfonos inteligentes y tabletas. Puede dividirse en dos enfoques principales: desarrollo nativo y desarrollo multiplataforma. El desarrollo nativo implica la creación de aplicaciones específicas para una plataforma en particular, utilizando los lenguajes y herramientas recomendadas por el fabricante del sistema operativo, como Swift para iOS y Java o Kotlin para Android. Por otro lado, el desarrollo multiplataforma permite crear aplicaciones que funcionen en múltiples sistemas operativos, utilizando un solo conjunto de código base, con herramientas como React Native, Flutter o Xamarin.",
+      "description02": "El proceso de desarrollo incluye la planificación, diseño, implementación, pruebas y despliegue de la aplicación en las tiendas de aplicaciones correspondientes. Este desarrollo es esencial debido a la creciente dependencia de los usuarios en sus dispositivos móviles para diversas tareas, desde acceder a información hasta realizar compras. Las empresas también aprovechan las aplicaciones móviles como una forma de llegar a sus clientes, mejorar la experiencia del usuario y generar ingresos adicionales.",
+      "button": "Iniciar Ahora"
+    },
+    "informaticSecurity": {
+      "title": "Seguridad Informática",
+      "description01": "Se refiere a la protección de sistemas informáticos, redes, dispositivos y datos contra ataques, accesos no autorizados, daños o cualquier otra amenaza que pueda comprometer su integridad, confidencialidad y disponibilidad. Este campo abarca una variedad de medidas y técnicas diseñadas para prevenir, detectar y responder a las amenazas cibernéticas. Involucra la implementación de políticas, procedimientos, controles y herramientas tecnológicas para proteger la información y los recursos digitales.",
+      "description02": "Algunas de las áreas clave de la seguridad informática incluyen la autenticación de usuarios, la gestión de accesos, la encriptación de datos, la protección contra malware, el monitoreo de redes, la respuesta a incidentes y la educación sobre seguridad para los usuarios.",
+      "button": "Iniciar Ahora"
+    },
+    "testModules": {
+      "title": "Módulos de Prueba",
+      "description01": "Son componentes del proceso de desarrollo de software que se utilizan para verificar y validar el correcto funcionamiento de una aplicación o sistema. Estos módulos están diseñados para probar diferentes aspectos del software, como su funcionalidad, rendimiento, seguridad y usabilidad. Especifican una serie de acciones que deben ejecutarse en la aplicación bajo prueba, así como los resultados esperados que se deben obtener. Pueden incluir pasos detallados para reproducir ciertos escenarios de uso, datos de entrada específicos, condiciones de prueba y criterios de aceptación. Además, pueden automatizarse mediante herramientas de prueba para ejecutar pruebas de manera eficiente y repetible.",
+      "description02": "Son esenciales para garantizar la calidad del software y detectar posibles defectos o problemas antes de que el producto se lance al mercado. Ayudan a identificar errores en una etapa temprana del ciclo de desarrollo, lo que permite a los distintos equipos de trabajo corregirlos de manera oportuna y evitar costosos errores en etapas posteriores.",
+      "button": "Iniciar Ahora"
+    },
+    "securityAudits": {
+      "title": "Auditorías de Seguridad",
+      "description01": "Son procedimientos diseñados para identificar y abordar posibles riesgos de seguridad en los sistemas, aplicaciones y datos de la organización. Durante estas auditorías, se analizan diversos aspectos relacionados con la seguridad, como las vulnerabilidades en el código de las aplicaciones, la configuración de seguridad de los sistemas y redes, y la gestión de accesos y privilegios. ",
+      "description02": "Se llevan a cabo pruebas de penetración para evaluar la resistencia de los sistemas frente a posibles ataques, y se verifica el cumplimiento de las regulaciones y estándares de seguridad aplicables. Al finalizar la auditoría, se proporcionan recomendaciones y acciones correctivas para mejorar la postura de seguridad de la empresa.",
+      "button": "Iniciar Ahora"
+    },
+    "startNow": "¡Inicia tu proyecto ahora!",
+    "startButton": "Iniciar Ahora",
+    "contact": {
+      "title": "Ponte en contacto",
+      "description01": "Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible para responder tus preguntas o atender tus necesidades.",
+      "name": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "button": "Enviar",
+      "errors": {
+        "name": "El nombre es obligatorio",
+        "lastName": "El apellido es obligatorio",
+        "email1": "El correo electrónico es obligatorio",
+        "email2": "Correo electrónico inválido",
+        "phone": "El teléfono es obligatorio",
+        "message": "El mensaje es obligatorio"
+      }
     }
+  }
 }
